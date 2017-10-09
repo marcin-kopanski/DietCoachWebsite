@@ -14,8 +14,14 @@ module DietCoach
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+
+    # Don't generate system test files.
+    config.generators.system_tests = nil
+    
+    # Strong Params
+    # conflig.action_controller.permit_all_parameters = true
     
     # mk custom
-    config.generators.test_framework false
+    config.eager_load_paths << "#{Rails.root}/lib"
   end
 end
