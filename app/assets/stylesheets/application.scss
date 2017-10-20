@@ -1,2 +1,20 @@
+@import "custom";
+@import "overrides";
 @import "bootstrap";
 @import "gritter";
+
+.main-header {
+   background: image-url('header.jpeg') no-repeat;
+   background-position: right;
+   background-size: cover;
+
+   min-height: 500px;
+
+   .jumbotron {
+      background-color: transparent;
+
+      .panel {
+         background-color: #6b5c3c99;
+      }
+   }
+}
