@@ -13,11 +13,8 @@
    <body class="bg-light">
       <%= render "shared/navbar" %>
 
-      <%= render "shared/main_header" %>
-
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-
       <%= yield %>
+
+      <%= alerts %>
    </body>
 </html>

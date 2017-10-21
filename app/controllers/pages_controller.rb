@@ -4,14 +4,11 @@ class PagesController < ApplicationController
 
   def about
   end
-  
+
   def pricing
   end
-  
+
   def offer
-  end
-  
-  def recipes
   end
 
   def contact
