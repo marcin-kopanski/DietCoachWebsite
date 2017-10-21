@@ -37,6 +37,7 @@ $my-primary-dark: #689F38;
 $my-primary-light: #dcedc8;
 $my-primary: #8BC34A;
 $my-text: #212121;
+$my-text-dark: #376311;
 $my-accent: #FF9800;
 $my-primary-text: #212121;
 $my-secondary-text: #757575;
@@ -66,7 +67,7 @@ info: $my-accent,
 warning: $yellow,
 danger: $red,
 light: $gray-100,
-dark: $gray-800);
+dark: $my-text-dark);
 
 // Links
 //

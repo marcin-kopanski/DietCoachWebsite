@@ -22,6 +22,21 @@ body {
    background: image-url('header.jpeg') no-repeat;
 }
 
+.pricing-header {
+   background: image-url('header.jpeg') no-repeat;
+}
+
+.offer-header {
+   background: image-url('header.jpeg') no-repeat;
+}
+
+.pricing-header,
+.offer-header {
+   min-height: 200px;
+ }
+
+.offer-header,
+.pricing-header,
 .about-me-header,
 .main-header {
    background-position: right;
@@ -40,4 +55,20 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.pricing-card {
+  .price-card-header {
+    height: 70px;
+  }
+
+  .card-body {
+    ul {
+      padding-left: 20px;
+      
+      li {
+        padding-bottom: .8rem;
+      }
+    }
+  }
 }
