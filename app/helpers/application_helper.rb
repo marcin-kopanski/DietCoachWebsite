@@ -1,4 +1,8 @@
 module ApplicationHelper
+  def copyright_generator
+    KopanskiViewTool::Renderer.copyright "Marcin Kopański", "All rights reserved"
+  end
+
   def nav_items
     [
       {

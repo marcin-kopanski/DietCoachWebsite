@@ -1,14 +1,31 @@
 @import "custom";
 @import "overrides";
 @import "bootstrap";
+@import "font-awesome";
 @import "gritter";
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 40px;
+}
 
 .main-header {
    background: image-url('header.jpeg') no-repeat;
+   min-height: 500px;
+}
+
+.about-me-header {
+   background: image-url('header.jpeg') no-repeat;
+}
+
+.about-me-header,
+.main-header {
    background-position: right;
    background-size: cover;
-
-   min-height: 500px;
 
    .jumbotron {
       background-color: transparent;
@@ -17,4 +34,10 @@
          background-color: #6b5c3c99;
       }
    }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
