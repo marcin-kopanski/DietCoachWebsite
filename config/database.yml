@@ -22,6 +22,7 @@ test:
   encoding: unicode
   database: DietCoach_test
   username: DietCoach
+  password: <%= ENV['DIETCOACH_DATABASE_PASSWORD'] %>
 
 production:
   <<: *default
@@ -29,3 +30,4 @@ production:
   encoding: unicode
   database: DietCoach
   username: DietCoach
+  password: <%= ENV['DIETCOACH_DATABASE_PASSWORD'] %>
