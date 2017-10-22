@@ -43,6 +43,8 @@ $my-primary-text: #212121;
 $my-secondary-text: #757575;
 $my-divider: #BDBDBD;
 
+$card-border-color: rgba($black,.125);
+
 $colors: ( blue: $blue,
 indigo: $indigo,
 purple: $purple,
@@ -67,7 +69,8 @@ info: $my-accent,
 warning: $yellow,
 danger: $red,
 light: $gray-100,
-dark: $my-text-dark);
+dark: $my-text-dark,
+panel-border: $card-border-color);
 
 // Links
 //

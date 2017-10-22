@@ -30,11 +30,17 @@ body {
    background: image-url('header.jpeg') no-repeat;
 }
 
+.contact-header {
+   background: image-url('header.jpeg') no-repeat;
+}
+
+.contact-header,
 .pricing-header,
 .offer-header {
    min-height: 200px;
  }
 
+.contact-header,
 .offer-header,
 .pricing-header,
 .about-me-header,
@@ -65,10 +71,21 @@ body {
   .card-body {
     ul {
       padding-left: 20px;
-      
+
       li {
         padding-bottom: .8rem;
       }
     }
   }
 }
+
+.offer-card {
+  background: image-url('offer-jumbo.jpeg') no-repeat;
+  background-position: right;
+  background-size: cover;
+  min-height: 360px;
+ }
+
+ .text-indent {
+   text-indent: 30px;
+ }
