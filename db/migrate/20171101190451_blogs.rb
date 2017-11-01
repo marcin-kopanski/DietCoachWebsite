@@ -8,7 +8,6 @@ class Blogs < ActiveRecord::Migration[5.1]
       t.string "slug"
       t.integer "status", default: 0
       t.index ["slug"], name: "index_blogs_on_slug", unique: true
-      t.index ["topic_id"], name: "index_blogs_on_topic_id"
     end
 
     create_table "comments", force: :cascade do |t|
@@ -33,7 +32,6 @@ class Blogs < ActiveRecord::Migration[5.1]
       t.index ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
     end
 
-    add_foreign_key "blogs", "topics"
     add_foreign_key "comments", "blogs"
     add_foreign_key "comments", "users"
   end
