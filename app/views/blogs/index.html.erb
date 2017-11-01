@@ -1,7 +1,13 @@
-<div class="col-sm-9 blog-main">
-   <%= paginate @blogs %>
-   
-   <%= render @blogs %>
-   
-   <%= paginate @blogs %>
+<%= render "shared/blog_header" %>
+
+<div class="bg-light py-3">
+  <div class="container">
+    <div class="col-md-9">
+     <%= paginate @blogs %>
+
+     <%= render @blogs %>
+
+     <%= paginate @blogs %>
+    </div>
+  </div>
 </div>

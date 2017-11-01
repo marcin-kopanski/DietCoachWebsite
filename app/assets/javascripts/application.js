@@ -11,8 +11,6 @@
 // about supported directives.
 //
 //= require jquery3
-//= require jquery_ujs
-//= require jquery-ui
 //= require cocoon
 //= require gritter
 //= require cable

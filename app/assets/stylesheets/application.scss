@@ -2,17 +2,8 @@
 @import "overrides";
 @import "bootstrap";
 @import "font-awesome";
-@import "gritter";
-
-@font-face {
-   font-family: 'Lato';
-   src: font-url('Lato-Regular.ttf');
-}
-
-@font-face {
-   font-family: 'RobotoSlab';
-   src: font-url('RobotoSlab-Regular.ttf');
-}
+@import "blogs";
+@import "pages";
 
 html {
   position: relative;
@@ -21,22 +12,6 @@ html {
 
 body {
   margin-bottom: 40px;
-  font-family: 'Lato', sans-serif;
-}
-
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-  font-family: 'RobotoSlab', serif;
 }
 
 .navbar {
@@ -65,18 +40,30 @@ h6,
    background: image-url('header.jpeg') no-repeat;
 }
 
+.recipes-header {
+   background: image-url('header.jpeg') no-repeat;
+}
+
+.blog-header {
+   background: image-url('header.jpeg') no-repeat;
+}
+
 .contact-header {
    background: image-url('header.jpeg') no-repeat;
 }
 
 .contact-header,
 .pricing-header,
-.offer-header {
+.offer-header,
+.recipes-header,
+.blog-header {
    min-height: 200px;
  }
 
 .contact-header,
 .offer-header,
+.recipes-header,
+.blog-header,
 .pricing-header,
 .about-me-header,
 .main-header {
