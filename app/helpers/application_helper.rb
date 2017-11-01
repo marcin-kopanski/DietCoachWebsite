@@ -26,6 +26,10 @@ module ApplicationHelper
         title: "Przepisy"
       },
       {
+        url: blogs_path,
+        title: "Blog"
+      },
+      {
         url: contact_path,
         title: "Kontakt"
       }
