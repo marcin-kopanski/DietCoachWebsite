@@ -17,4 +17,7 @@ Rails.application.routes.draw do
   resources :recipes
 
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
+
+  match '/contact_form', to: 'contact_form#new', via: 'get'
+  resources "contact_form", only: [:new, :create]
 end

@@ -73,3 +73,6 @@ gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
 gem 'friendly_id', '~> 5.1.0' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
+
+gem 'mail_form'
+gem 'simple_form'
