@@ -1,12 +1,12 @@
 class RecipesController < ApplicationController
   layout 'application'
-  
+
   before_action :set_recipe, only: [:show, :edit, :update, :destroy]
   access all: [:index, :show, :new, :edit, :create, :update, :destroy], user: :all
 
   # GET /recipes
   def index
-    @recipes = Recipe.all
+    @recipes = Recipe.recent.page(params[:page]).per(5)
   end
 
   # GET /recipes/1
@@ -51,11 +51,11 @@ class RecipesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_recipe
-      @recipe = Recipe.find(params[:id])
+      @recipe = Recipe.friendly.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
     def recipe_params
-      params.require(:recipe).permit(:title, :subtitle, :body, :thumb_image, :main_image, :position)
+      params.require(:recipe).permit(:title, :subtitle, :body, :thumb_image, :main_image)
     end
 end

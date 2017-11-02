@@ -14,8 +14,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :recipes, except: [:show]
-  get 'recipe/:id', to: 'recipes#show', as: 'recipe_show'
+  resources :recipes
 
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
 end
