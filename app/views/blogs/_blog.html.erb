@@ -3,10 +3,17 @@
     <%= image_tag blog_img(blog.main_image), width: '100%' %>
   </div>
   <div class="col-md-8">
-    <h2 class="blog-post-title"><%= link_to blog.title, blog %></h2>
-    <p class="blog-post-meta">Published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago</p>
+    <div class="row">
+      <div class="col text-center">
+        <h2 class="blog-post-title"><%= link_to blog.title, blog %></h2>
+      </div>
 
-    <%= render partial: 'blogs/admin_actions', locals: { blog: blog } %>
+      <% if logged_in?(:site_admin) %>
+        <div class="col-2 text-center"><%= render partial: 'blogs/admin_actions', locals: { blog: blog } %></div>
+      <% end %>
+    </div>
+
+    <p class="blog-post-meta">Published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago</p>
 
     <p><%= markdown truncate(blog.body, length: 350) %></p>
   </div>
