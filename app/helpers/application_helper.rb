@@ -57,11 +57,11 @@ module ApplicationHelper
       html_tag_class = " class='#{html_tag_class}'"
     end
 
-    if current_user.is_a?(GuestUser)
-      login_links << "<#{html_tag}#{html_tag_class}><a href=\"#{new_user_registration_path}\" class=\"#{css_class} #{active? new_user_registration_path}\">Register</a></#{html_tag}>"
-      login_links << "<#{html_tag}#{html_tag_class}><a href=\"#{new_user_session_path}\" class=\"#{css_class} #{active? new_user_session_path}\">Login</a></#{html_tag}>"
-    else
-      login_links << "<#{html_tag}#{html_tag_class}><a href=\"#{destroy_user_session_path}\" class=\"#{css_class} #{active? destroy_user_session_path}\" method=\"delete\">Logout</a></#{html_tag}>"
+    if !current_user.is_a?(GuestUser)
+    #   login_links << "<#{html_tag}#{html_tag_class}><a href=\"#{new_user_registration_path}\" class=\"#{css_class} #{active? new_user_registration_path}\">Register</a></#{html_tag}>"
+    #   login_links << "<#{html_tag}#{html_tag_class}><a href=\"#{new_user_session_path}\" class=\"#{css_class} #{active? new_user_session_path}\">Login</a></#{html_tag}>"
+    # else
+      login_links << "<#{html_tag}#{html_tag_class}><a href=\"#{destroy_user_session_path}\" class=\"#{css_class} #{active? destroy_user_session_path}\" data-method=\"delete\">Logout</a></#{html_tag}>"
     end
 
     login_links.html_safe
