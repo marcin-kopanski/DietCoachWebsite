@@ -21,7 +21,6 @@ ActiveRecord::Schema.define(version: 20171102100309) do
     t.integer "status", default: 0
     t.text "main_image"
     t.index ["slug"], name: "index_blogs_on_slug", unique: true
-    t.index [nil], name: "index_blogs_on_topic_id"
   end
 
   create_table "comments", force: :cascade do |t|

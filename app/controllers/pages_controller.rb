@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def home
+    @featured_recipes = Recipe.featured_recipes
   end
 
   def about
