@@ -3,6 +3,8 @@ class Blog < ApplicationRecord
 
    has_many :comments, dependent: :destroy
 
+   mount_uploader :main_image, BlogUploader
+
    enum status: { draft:0, published:1 }
    extend FriendlyId
    friendly_id :title, use: :slugged

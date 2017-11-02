@@ -1,8 +1,13 @@
- <div class="blog-post">
+<div class="row blog-post">
+  <div class="col-md-4">
+    <%= image_tag blog_img(blog.main_image), width: '100%' %>
+  </div>
+  <div class="col-md-8">
     <h2 class="blog-post-title"><%= link_to blog.title, blog %></h2>
     <p class="blog-post-meta">Published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago</p>
 
     <%= render partial: 'blogs/admin_actions', locals: { blog: blog } %>
 
-    <p><%= markdown truncate(blog.body, length: 150) %></p>
- </div>
+    <p><%= markdown truncate(blog.body, length: 350) %></p>
+  </div>
+</div>
