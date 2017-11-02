@@ -2,8 +2,16 @@
 
 <div class="bg-light py-3">
   <div class="container">
+    <% if logged_in?(:site_admin) %>
+      <div class="row">
+        <div class="col-md-12 mb-4">
+          <%= link_to 'Nowy Blog', new_blog_path, class: "pull-right" if logged_in?(:site_admin) %>
+        </div>
+      </div>
+    <% end %>
+
     <div class="row">
-      <div class="col-12 text-center">
+      <div class="col-12">
         <%= paginate @blogs %>
       </div>
     </div>
@@ -11,7 +19,7 @@
     <%= render @blogs %>
 
     <div class="row">
-      <div class="col-12 text-center">
+      <div class="col-12">
         <%= paginate @blogs %>
       </div>
     </div>

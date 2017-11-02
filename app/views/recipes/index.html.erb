@@ -4,7 +4,7 @@
   <div class="container">
     <% if logged_in?(:site_admin) %>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 mb-4">
           <%= link_to 'Nowy Przepis', new_recipe_path, class: "pull-right" if logged_in?(:site_admin) %>
         </div>
       </div>
