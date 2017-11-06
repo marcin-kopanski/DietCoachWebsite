@@ -1,47 +1,38 @@
-<%= form_with(model: recipe, local: true) do |form| %>
+<%= form_for(recipe) do |form| %>
   <% if recipe.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(recipe.errors.count, "error") %> prohibited this recipe from being saved:</h2>
-
-      <ul>
-      <% recipe.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
+    <% recipe.errors.full_messages.each do |error| %>
+       <%= alert_generator error %>
+    <% end %>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :title %>
-    <%= form.text_field :title, id: :recipe_title %>
+    <%= form.text_field :title, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :subtitle %>
-    <%= form.text_field :subtitle, id: :recipe_subtitle %>
+    <%= form.text_field :subtitle, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :body %>
-    <%= form.text_area :body, id: :recipe_body %>
+    <%= form.text_area :body, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :thumb_image %>
-    <%= form.text_area :thumb_image, id: :recipe_thumb_image %>
+  <div class="form-group">
+     <label class="btn btn-primary btn-block">
+        Wybierz miniaturkę <%= form.file_field :thumb_image, style: 'display: none;' %>
+     </label>
   </div>
 
-  <div class="field">
-    <%= form.label :main_image %>
-    <%= form.text_area :main_image, id: :recipe_main_image %>
-  </div>
-
-  <div class="field">
-    <%= form.label :position %>
-    <%= form.number_field :position, id: :recipe_position %>
+  <div class="form-group">
+     <label class="btn btn-primary btn-block">
+        Wybierz główny obraz <%= form.file_field :main_image, style: 'display: none;' %>
+     </label>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-primary" %>
   </div>
 <% end %>

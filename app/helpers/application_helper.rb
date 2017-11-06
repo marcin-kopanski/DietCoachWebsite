@@ -3,6 +3,10 @@ module ApplicationHelper
     KopanskiViewTool::Renderer.copyright "Marcin Kopański", "All rights reserved"
   end
 
+  def image_generator(width:,height:)
+    "https://placehold.it/#{width}x#{height}"
+  end
+
   def nav_items
     [
       {

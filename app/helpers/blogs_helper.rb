@@ -27,15 +27,11 @@ module BlogsHelper
     "color: red;" if blog.draft?
   end
 
-  def image_generator(height:,width:)
-    "https://placehold.it/#{height}x#{width}"
-  end
-
   def blog_img img
     if img.model.main_image?
       img
     else
-      image_generator(height: '600', width: '400')
+      image_generator(height: '400', width: '600')
     end
   end
 end

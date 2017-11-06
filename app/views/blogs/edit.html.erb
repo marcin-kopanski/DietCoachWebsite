@@ -1,8 +1,11 @@
-<div class="col-sm-9 blog-main">
-   <h1>Editing Blog</h1>
+<%= render "shared/blog_header" %>
 
-   <%= render 'form', blog: @blog %>
-   
-   <%= link_to 'Show', @blog %> |
-   <%= link_to 'Back', blogs_path %>
+<div class="bg-light py-3">
+  <div class="container">
+    <div class="col-md-12">
+      <h1>Edytuj blog</h1>
+
+      <%= render 'form', blog: @blog %>
+    </div>
+  </div>
 </div>

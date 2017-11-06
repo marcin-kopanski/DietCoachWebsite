@@ -24,6 +24,12 @@
   </div>
 
   <div class="form-group">
+     <label class="btn btn-primary btn-block">
+        Wybierz główny obraz <%= form.file_field :main_image, style: 'display: none;' %>
+     </label>
+  </div>
+
+  <div class="form-group">
     <%= form.submit class: "btn btn-primary" %>
   </div>
 <% end %>
