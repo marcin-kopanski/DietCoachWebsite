@@ -1,6 +1,6 @@
 module ApplicationHelper
   def copyright_generator
-    KopanskiViewTool::Renderer.copyright "Marcin Kopański", "All rights reserved"
+    # KopanskiViewTool::Renderer.copyright "Marcin Kopański", "All rights reserved"
   end
 
   def image_generator(width:,height:)

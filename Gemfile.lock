@@ -1,5 +1,5 @@
 GIT
-  remote: https://bitbucket.org/kopanskiapps/kopanskiviewtool.git
+  remote: https://github.com/marcin-kopanski/kopanskiviewtool.git
   revision: c7190fd27bc08693c59d8d5a79e1b14e27431d66
   specs:
     kopanski_view_tool (0.1.1)
@@ -283,4 +283,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.16.0.pre.2
+   1.16.0
