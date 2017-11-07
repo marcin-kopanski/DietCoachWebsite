@@ -2,31 +2,37 @@
 
 <div class="bg-light py-3">
   <div class="container">
-    <div class="col-md-12">
-      <% if logged_in?(:site_admin) %>
-        <nav class="breadcrumb">
+    <% if logged_in?(:site_admin) %>
+      <div class="row">
+        <nav class="col-12 breadcrumb">
           <span class="pull-right">
             <%= link_to fa_icon('pencil-square-o'), edit_recipe_path(@recipe) if logged_in?(:site_admin) %>
             <%= link_to fa_icon('trash'), @recipe, method: :delete,
             data: { confirm: "Czy chcesz usunąć ten przepis?" } if logged_in?(:site_admin) %>
           </span>
         </nav>
-      <% end %>
+      </div>
+    <% end %>
 
-      <div class="row">
-        <div class="col-12 text-center">
-          <%= image_tag recipe_img(@recipe.main_image, 'main'), width: '100%' %>
-        </div>
+    <div class="row my-3">
+      <h2 class="mx-auto text-primary"><%= markdown @recipe.title %></h2>
+    </div>
+
+    <div class="row">
+      <div class="col-8 text-center mb-4">
+        <%= image_tag recipe_img(@recipe.main_image), width: '100%' %>
       </div>
 
-      <div class="row">
-        <div class="col-12">
-          <h2><%= @recipe.title %></h2>
+      <div class="col-4 text-justify">
+        <h4 class="text-primary">Składniki:</h4>
+        <%= markdown @recipe.ingredients %>
+      </div>
+    </div>
 
-          <h4><%= @recipe.subtitle %></h4>
-
-          <p><%= markdown @recipe.body %></p>
-        </div>
+    <div class="row">
+      <div class="col-12">
+        <h4 class="text-primary">Opis przygotowania:</h4>
+        <p><%= markdown @recipe.body %></p>
       </div>
     </div>
   </div>

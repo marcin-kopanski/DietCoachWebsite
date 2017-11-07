@@ -11,7 +11,11 @@ class Recipe < ApplicationRecord
     order(created_at: :desc)
   end
 
+  def self.featured
+    where(featured: true)
+  end
+
   def self.featured_recipes
-     limit(3)
+     featured.limit(3)
   end
 end
