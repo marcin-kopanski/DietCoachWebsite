@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171102100309) do
+ActiveRecord::Schema.define(version: 20171107212158) do
 
   create_table "blogs", force: :cascade do |t|
     t.string "title"
@@ -47,15 +47,14 @@ ActiveRecord::Schema.define(version: 20171102100309) do
 
   create_table "recipes", force: :cascade do |t|
     t.string "title"
-    t.string "subtitle"
     t.text "body"
-    t.text "thumb_image"
     t.text "main_image"
-    t.integer "position"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.text "description"
     t.string "slug"
+    t.boolean "featured"
+    t.text "ingredients"
+    t.text "subtitle"
     t.index ["slug"], name: "index_recipes_on_slug", unique: true
   end
 

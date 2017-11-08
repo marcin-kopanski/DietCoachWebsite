@@ -36,7 +36,7 @@
     <div class="row">
       <% if @featured_recipes[0] %>
         <div class="col-md-4">
-          <%= image_tag recipe_img(@featured_recipes[0].thumb_image, 'thumb'), width: '100%' %>
+          <%= image_tag recipe_img(@featured_recipes[0].main_image), width: '100%' %>
           <h2 class="blog-post-title text-center">
             <%= link_to @featured_recipes[0].title, @featured_recipes[0] %>
           </h2>
@@ -46,7 +46,7 @@
 
       <% if @featured_recipes[1] %>
         <div class="col-md-4">
-          <%= image_tag recipe_img(@featured_recipes[1].thumb_image, 'thumb'), width: '100%' %>
+          <%= image_tag recipe_img(@featured_recipes[1].main_image), width: '100%' %>
           <h2 class="blog-post-title text-center">
             <%= link_to @featured_recipes[1].title, @featured_recipes[1] %>
           </h2>
@@ -56,7 +56,7 @@
 
       <% if @featured_recipes[2] %>
         <div class="col-md-4">
-          <%= image_tag recipe_img(@featured_recipes[2].thumb_image, 'thumb'), width: '100%' %>
+          <%= image_tag recipe_img(@featured_recipes[2].main_image), width: '100%' %>
           <h2 class="blog-post-title text-center">
             <%= link_to @featured_recipes[2].title, @featured_recipes[2] %>
           </h2>
