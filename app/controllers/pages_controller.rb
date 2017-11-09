@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def home
+    @contact = ContactForm.new
     @featured_recipes = Recipe.featured_recipes
   end
 
@@ -13,5 +14,6 @@ class PagesController < ApplicationController
   end
 
   def contact
+    @contact = ContactForm.new
   end
 end
