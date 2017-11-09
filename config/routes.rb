@@ -18,6 +18,6 @@ Rails.application.routes.draw do
 
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
 
-  match '/contact_form', to: 'contact_form#new', via: 'get'
-  resources "contact_form", only: [:new, :create]
+  get 'contact_forms', to: 'contact_forms#new'
+  resources :contact_forms, only: [:new, :create]
 end
