@@ -18,5 +18,6 @@
 
 .byebug_history
 
+# mk te sa bardzo wazne, tu wrzucasz swoje hasla do api itd
 /config/secrets.yml
 .env
