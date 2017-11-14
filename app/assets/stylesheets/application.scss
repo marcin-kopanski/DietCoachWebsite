@@ -24,32 +24,32 @@ body {
 }
 
 .main-header {
-   background: image-url('header.jpeg') no-repeat;
+   background: image-url('header.jpg') no-repeat;
    min-height: 500px;
 }
 
 .about-me-header {
-   background: image-url('header.jpeg') no-repeat;
+   background: image-url('header.jpg') no-repeat;
 }
 
 .pricing-header {
-   background: image-url('header.jpeg') no-repeat;
+   background: image-url('header.jpg') no-repeat;
 }
 
 .offer-header {
-   background: image-url('header.jpeg') no-repeat;
+   background: image-url('header.jpg') no-repeat;
 }
 
 .recipes-header {
-   background: image-url('header.jpeg') no-repeat;
+   background: image-url('header.jpg') no-repeat;
 }
 
 .blog-header {
-   background: image-url('header.jpeg') no-repeat;
+   background: image-url('header.jpg') no-repeat;
 }
 
 .contact-header {
-   background: image-url('header.jpeg') no-repeat;
+   background: image-url('header.jpg') no-repeat;
 }
 
 .contact-header,
@@ -244,7 +244,7 @@ input[type=range]::-ms-thumb {
 }
 input[type=range]:focus::-ms-fill-lower {
   //background: #3071a9;
-  background-color: #78B92E;
+  background: #78B92E;
 }
 input[type=range]:focus::-ms-fill-upper {
   //background: #367ebd;
