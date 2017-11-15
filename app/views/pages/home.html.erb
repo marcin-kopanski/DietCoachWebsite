@@ -67,18 +67,77 @@
   </div>
 </div>
 
-<!-- <div class="bg-light py-3">
+<div class="bg-light py-3">
+  <script type="text/javascript">
+			function sliderChange(val, type) {
+				if(type=='height'){
+					document.getElementById('height').value = val;
+				}
+				else
+					document.getElementById('weight').value = val;
+			}
+			
+			function inputChange(val, type) {
+				if(type=='height'){
+					document.getElementById('height-slider').value = val;
+				}
+				else
+					document.getElementById('weight-slider').value = val;
+			}
+			
+			function calculateBMI()
+			{
+				var height=Number(document.getElementById("height").value);
+				var weight=Number(document.getElementById("weight").value);
+				
+				height = height / 100;
+				var bmi=weight/Math.pow(height,2);
+
+				document.getElementById("output").innerText=Math.round(bmi*100)/100;
+				
+				var output =  Math.round(bmi*100)/100;
+				if (output<18.5)
+				document.getElementById("comment").innerText = "Underweight";
+			  else   if (output>=18.5 && output<=25)
+				document.getElementById("comment").innerText = "Normal";
+			 else   if (output>=25 && output<=30)
+				document.getElementById("comment").innerText = "Obese";
+			 else   if (output>30)
+				document.getElementById("comment").innerText = "Overweight";
+			   // document.getElementById("answer").value = output; 
+			}
+		</script>
   <div class="container">
-    <div class="jumbotron">
-      <div class="col-sm-8 mx-auto">
-        <h1>Calculator</h1>
-        <p>This example is a quick exercise to illustrate how the navbar and its contents work. Some navbars extend the width of the viewport, others are confined within a <code>.container</code>. For positioning of navbars, checkout the <a href="../navbar-top/">top</a> and <a href="../navbar-top-fixed/">fixed top</a> examples.</p>
-        <p>At the smallest breakpoint, the collapse plugin is used to hide the links and show a menu button to toggle the collapsed content.</p>
-        <p>
-          <a class="btn btn-primary" href="../../components/navbar/" role="button">View navbar docs &raquo;</a>
-        </p>
-      </div>
-    </div> -->
+    <div class="jumbotron bmi-cal">
+      <h1>Kalkulator BMI</h1>
+			<div class="form-group row">
+				<label for="height" class="col-2 col-form-label">Wzrost:</label>
+				<div class="col-4 input-group">
+					<input type="text" class="form-control" id="height" aria-describedby="cm-unit" onchange="inputChange(this.value, 'height')" />
+					<span class="input-group-addon" id="cm-unit">cm</span>
+				</div>
+				<div class="col-6">
+					<input id="height-slider" type="range"  min="0" max="220" value="1" oninput="sliderChange(this.value, 'height')" />
+				</div>
+			</div>
+			
+			<div class="form-group row">
+				<label for="weight" class="col-2 col-form-label">Waga:</label>
+				<div class="col-4 input-group">
+					<input type="text" class="form-control" id="weight" aria-describedby="kg-unit" onchange="inputChange(this.value, 'weight')" /></p>
+					<span class="input-group-addon" id="kg-unit">kg</span>
+				</div>
+				<div class="col-6">
+				<input id="weight-slider" type="range"  min="0" max="200" value="0" oninput="sliderChange(this.value, 'weight')" />
+			</div>
+			</div>
+
+			<input type="submit" class="btn" value="Zatwierdź" onclick="calculateBMI();">
+			<h1>Twoje BMI: <span id="output"></span></h1>
+			<h2>Tekst<span id="comment"></span> </h2> 
+    </div>
+  </div>
+</div> 
 
 <%= render "shared/contact" %>
 
