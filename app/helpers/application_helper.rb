@@ -6,6 +6,33 @@ module ApplicationHelper
   def image_generator(width:,height:)
     "https://placehold.it/#{width}x#{height}"
   end
+  
+  def meta_tags
+    [
+      {
+        name: "",
+        content: ""
+      },
+      {
+        name: "",
+        content: ""
+      }
+    ]
+  end
+
+  def meta_helper
+    meta_list = ""
+
+    if html_tag_class
+      html_tag_class = " class='#{html_tag_class}'"
+    end
+
+    nav_items.each do |item|
+      meta_list << "<meta name=\"#{item[:name]}\" content=\"#{item[:content]}\""
+    end
+
+    meta_list.html_safe
+  end
 
   def nav_items
     [
