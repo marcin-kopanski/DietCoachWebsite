@@ -8,20 +8,7 @@ module ApplicationHelper
   end
   
   def meta_tags
-    [
-      {
-        name: "keywords",
-        content: "dietetyk, dietetyk gdańsk, dietetyk gdańsk wrzeszcz, równowaga"
-      },
-      {
-        name: "description",
-        content: "Poradnia dietetyczna w Gdańsku, oferuje ułożenie diety, jadłospisy, motywacje, oraz terapie"
-      },
-      {
-        name: "locale",
-        content: "pl_PL"
-      }
-    ]
+    
   end
 
   def meta_helper
