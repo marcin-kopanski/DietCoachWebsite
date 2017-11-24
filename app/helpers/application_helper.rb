@@ -8,16 +8,7 @@ module ApplicationHelper
   end
   
   def meta_tags
-    [
-      {
-        name: "",
-        content: ""
-      },
-      {
-        name: "",
-        content: ""
-      }
-    ]
+    
   end
 
   def meta_helper

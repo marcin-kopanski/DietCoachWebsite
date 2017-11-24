@@ -6,7 +6,6 @@
       <div class="card">
         <%= image_tag "step1.jpg", class: "card-img-top", style: "width: 100%;" %>
         <div class="card-body text-center">
-          <p class="h1 card-title text-primary">Krok pierwszy</p>
           <p class="h4 card-title text-primary">Zrób coś dla siebie i zadbaj o swoje zdrowie!</p>
           <p class="card-text text-justify">Wysyłając formularz bądź umawiając się ze mną na darmową konsultację jesteś o krok bliżej do osiągnięcia lepszej sylwetki i stanu zdrowia. Wypełnienie formularza zajmie Ci około 10 minut - resztą zajmę się ja!</p>
         </div>
@@ -14,7 +13,6 @@
       <div class="card">
         <%= image_tag "step2.jpg", class: "card-img-top", style: "width: 100%;" %>
         <div class="card-body text-center">
-          <p class="h1 card-title text-primary">Krok drugi</p>
           <p class="h4 card-title text-primary">Realizuj swój plan i ciesz się jedzeniem!</p>
           <p class="card-text text-justify">Aby osiągnąć wymarzony cel Twoim zadaniem będzie przestrzeganie kilku prostych zasad. Moi klienci już po tygodniu zaczynają zauważać pierwsze efekty swojej pracy!</p>
         </div>
@@ -22,7 +20,6 @@
       <div class="card">
         <%= image_tag "step3.jpg", class: "card-img-top", style: "width: 100%;" %>
         <div class="card-body text-center">
-          <p class="h1 card-title text-primary">Krok trzeci</p>
           <p class="h4 card-title text-primary">Pogratuluj sobie wytrwałości!</p>
           <p class="card-text text-justify">Kiedy osiągniesz swój cel poczujesz dumę z samego siebie, ale również chęć na więcej. Masz więcej siły i energii, stajesz się motywacją dla innych. Nie bez powodu mówi się „w zdrowym ciele, zdrowy duch”!</p>
         </div>
@@ -67,8 +64,8 @@
   </div>
 </div>
 
-<div class="bg-light py-3">
-  <script type="text/javascript">
+  <div class="container">
+    <script type="text/javascript">
 			function sliderChange(val, type) {
 				if(type=='height'){
 					document.getElementById('height').value = val;
@@ -96,21 +93,29 @@
 				document.getElementById("output").innerText=Math.round(bmi*100)/100;
 				
 				var output =  Math.round(bmi*100)/100;
-				if (output<18.5)
-				document.getElementById("comment").innerText = "Underweight";
-			  else   if (output>=18.5 && output<=25)
-				document.getElementById("comment").innerText = "Normal";
-			 else   if (output>=25 && output<=30)
-				document.getElementById("comment").innerText = "Obese";
-			 else   if (output>30)
-				document.getElementById("comment").innerText = "Overweight";
+				if (output<16.99)
+				document.getElementById("comment").innerText = "Wychudzenie";
+				else   if (output>=17 && output<=18.49)
+				document.getElementById("comment").innerText = "Niedowaga";
+			  else   if (output>=18.5 && output<25)
+				document.getElementById("comment").innerText = "Waga prawidłowa";
+			  else   if (output>=25 && output<30)
+				document.getElementById("comment").innerText = "Nadwaga";
+				else   if (output>=30 && output<35)
+				document.getElementById("comment").innerText = "Otyłość pierwszego stopnia";
+				else   if (output>=35 && output<40)
+				document.getElementById("comment").innerText = "Otyłość drugiego stopnia";
+				else   if (output>=40 && output<45)
+				document.getElementById("comment").innerText = "Otyłość trzeciego stopnia";
+			  else   if (output>=45)
+				document.getElementById("comment").innerText = "Otyłość czwartego stopnia";
 			   // document.getElementById("answer").value = output; 
 			}
 		</script>
-  <div class="container">
-    <div class="jumbotron bmi-cal">
+    <div class="jumbotron bg-primary-light text-dark ">
       <h1>Kalkulator BMI</h1>
-			<div class="form-group row">
+      
+			<div class="form-group row mt-2">
 				<label for="height" class="col-2 col-form-label">Wzrost:</label>
 				<div class="col-4 input-group">
 					<input type="text" class="form-control" id="height" aria-describedby="cm-unit" onchange="inputChange(this.value, 'height')" />
@@ -128,17 +133,17 @@
 					<span class="input-group-addon" id="kg-unit">kg</span>
 				</div>
 				<div class="col-6">
-				<input id="weight-slider" type="range"  min="0" max="200" value="0" oninput="sliderChange(this.value, 'weight')" />
-			</div>
+				  <input id="weight-slider" type="range"  min="0" max="200" value="0" oninput="sliderChange(this.value, 'weight')" />
+			  </div>
 			</div>
 
 			<input type="submit" class="btn" value="Zatwierdź" onclick="calculateBMI();">
-			<h1>Twoje BMI: <span id="output"></span></h1>
-			<h2>Tekst<span id="comment"></span> </h2> 
+			<h4>Twoje BMI: <span id="output"></span></h2>
+			<h4><span id="comment"></span> </h2> 
     </div>
   </div>
-</div> 
 
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXADZtpBtC4Zdrhh40pYgAxIecba_0OLg&callback=initMap"></script>
 <%= render "shared/contact" %>
 
 <%= render "shared/contact_modal" %>

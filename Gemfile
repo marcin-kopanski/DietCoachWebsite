@@ -76,3 +76,6 @@ gem 'kaminari', '~> 1.0', '>= 1.0.1'
 
 gem 'mail_form'
 gem 'simple_form'
+
+gem 'rails_12factor', group: :production
+
