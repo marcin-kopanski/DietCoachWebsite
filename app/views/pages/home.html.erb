@@ -66,80 +66,85 @@
 
   <div class="container">
     <script type="text/javascript">
-			function sliderChange(val, type) {
-				if(type=='height'){
-					document.getElementById('height').value = val;
-				}
-				else
-					document.getElementById('weight').value = val;
-			}
-			
-			function inputChange(val, type) {
-				if(type=='height'){
-					document.getElementById('height-slider').value = val;
-				}
-				else
-					document.getElementById('weight-slider').value = val;
-			}
-			
-			function calculateBMI()
-			{
+    
+			function calculateBMI() {
+				
 				var height=Number(document.getElementById("height").value);
 				var weight=Number(document.getElementById("weight").value);
 				
 				height = height / 100;
 				var bmi=weight/Math.pow(height,2);
-
+				document.getElementById("bmiImg").className = "d-none";
+				document.getElementById("bmiDescr").classList.remove("d-none");
 				document.getElementById("output").innerText=Math.round(bmi*100)/100;
 				
 				var output =  Math.round(bmi*100)/100;
-				if (output<16.99)
-				document.getElementById("comment").innerText = "Wychudzenie";
-				else   if (output>=17 && output<=18.49)
-				document.getElementById("comment").innerText = "Niedowaga";
-			  else   if (output>=18.5 && output<25)
-				document.getElementById("comment").innerText = "Waga prawidłowa";
-			  else   if (output>=25 && output<30)
-				document.getElementById("comment").innerText = "Nadwaga";
-				else   if (output>=30 && output<35)
-				document.getElementById("comment").innerText = "Otyłość pierwszego stopnia";
-				else   if (output>=35 && output<40)
-				document.getElementById("comment").innerText = "Otyłość drugiego stopnia";
-				else   if (output>=40 && output<45)
-				document.getElementById("comment").innerText = "Otyłość trzeciego stopnia";
-			  else   if (output>=45)
-				document.getElementById("comment").innerText = "Otyłość czwartego stopnia";
+				if (output<16.99){
+					document.getElementById("comment").innerText = "Wychudzenie";
+					document.getElementById("bmi-description").innerText = "Twoje BMI wskazuje na wychudzenie. Zalecam umówienie się na darmową konsultację dietetyczną, aby określić przyczyny tego stanu. Zmiany pod moim okiem pozwolą Ci wrócić do formy, zadbać o dobry wygląd, ale również zapobiec chorobom związanym ze zbyt małą wagą. Spożywanie niewystarczającej ilości składników odżywczych, witamin i minerałów jest niebezpieczne dla zdrowia.";
+				}
+				else   if (output>=17 && output<=18.49) {
+					document.getElementById("comment").innerText = "Niedowaga";
+					document.getElementById("bmi-description").innerText = "Twoje BMI wskazuje na niedowagę. Zalecam umówienie się na darmową konsultację dietetyczną, aby określić przyczyny tego stanu. Zmiany pod moim okiem pozwolą Ci wrócić do formy, zadbać o dobry wygląd, ale również zapobiec chorobom związanym ze zbyt małą wagą. Spożywanie niewystarczającej ilości składników odżywczych, witamin i minerałów jest niebezpieczne dla zdrowia.";
+				}
+			  else   if (output>=18.5 && output<25) {
+					document.getElementById("comment").innerText = "Waga prawidłowa";
+					document.getElementById("bmi-description").innerText ="Twoje BMI jest w normie i z dużym prawdopodobieństwem mogę stwierdzić, że nie masz problemu ze zbędnymi kilogramami. Pamiętaj jednak, że warto co jakiś czas skontrolować swoją masę i skład ciała. W tym celu umów się na darmową konsultację podczas której wykonam badanie analizatorem składu masy i ciała. Podczas takiej konsultacji otrzymasz cenne wskazówki jak skutecznie utrzymać aktualną masę ciała lub co zrobić, by poprawić wygląd sylwetki.";
+			  }
+			  else   if (output>=25 && output<30) {
+					document.getElementById("comment").innerText = "Nadwaga";
+					document.getElementById("bmi-description").innerText = "Twoje BMI wskazuje na nadwagę. Zalecam umówienie się na darmową konsultację dietetyczną, aby określić przyczyny tego stanu. Zmiany pod moim okiem pozwolą Ci wrócić do formy, zadbać o dobry wygląd, ale również zapobiec chorobom związanym z nieprawidłowym żywieniem.";
+			  }
+				else   if (output>=30 && output<35) {
+					document.getElementById("comment").innerText = "Otyłość pierwszego stopnia";
+					document.getElementById("bmi-description").innerText = "Twoje BMI wskazuje otyłość (I stopnia). W tym przypadku bardzo pomocna może okazać się konsultacja dietetyczna, aby określić przyczyny tego stanu. Umów się na darmową konsultację i zdecyduj czy chcesz podjąć się wprowadzenia bezpiecznych zmian pod moją opieką. Dzięki naszej współpracy możesz poprawić swój stan zdrowia, samopoczucie i sylwetkę.";
+				}
+				else   if (output>=35 && output<40) {
+					document.getElementById("comment").innerText = "Otyłość drugiego stopnia";
+					document.getElementById("bmi-description").innerText = "Twoje BMI wskazuje na otyłość II stopnia. Powinieneś niezwłocznie umówić się na darmową konsultację dietetyczną, aby ustalić i wprowadzić nowy plan żywieniowy. Otyłość nie tylko jest defektem estetycznym, ale również jest przyczyną pogarszającego się stanu zdrowia. Nieleczona prowadzi do takich chorób jak : nadciśnienie, miażdżyca, cukrzyca a nawet przyczynia się do powstawania niektórych nowotworów. Zmiany pod moim okiem pozwolą Ci skutecznie i bezpiecznie zadbać o zdrowie fizyczne i psychiczne, poprawić samopoczucie i sylwetkę.";
+				}
+				else   if (output>=40 && output<45) {
+					document.getElementById("comment").innerText = "Otyłość trzeciego stopnia";
+					document.getElementById("bmi-description").innerText = "Twoje BMI wskazuje na otyłość III stopnia. Powinieneś niezwłocznie umówić się na darmową konsultację dietetyczną, aby ustalić i wprowadzić nowy plan żywieniowy. Otyłość nie tylko jest defektem estetycznym, ale również jest przyczyną pogarszającego się stanu zdrowia. Nieleczona prowadzi do takich chorób jak : nadciśnienie, miażdżyca, cukrzyca a nawet przyczynia się do powstawania niektórych nowotworów. Zmiany pod moim okiem pozwolą Ci skutecznie i bezpiecznie zadbać o zdrowie fizyczne i psychiczne, poprawić samopoczucie i sylwetkę.";
+				}
+			  else   if (output>=45) {
+					document.getElementById("comment").innerText = "Otyłość czwartego stopnia";
+					document.getElementById("bmi-description").innerText = "Twoje BMI wskazuje na otyłość IV stopnia. Powinieneś niezwłocznie umówić się na darmową konsultację dietetyczną, aby ustalić i wprowadzić nowy plan żywieniowy. Otyłość nie tylko jest defektem estetycznym, ale również jest przyczyną pogarszającego się stanu zdrowia. Nieleczona prowadzi do takich chorób jak : nadciśnienie, miażdżyca, cukrzyca a nawet przyczynia się do powstawania niektórych nowotworów. Zmiany pod moim okiem pozwolą Ci skutecznie i bezpiecznie zadbać o zdrowie fizyczne i psychiczne, poprawić samopoczucie i sylwetkę.";
+			  }
 			   // document.getElementById("answer").value = output; 
 			}
 		</script>
     <div class="jumbotron bg-primary-light text-dark ">
-      <h1>Kalkulator BMI</h1>
-      
-			<div class="form-group row mt-2">
-				<label for="height" class="col-2 col-form-label">Wzrost:</label>
-				<div class="col-4 input-group">
-					<input type="text" class="form-control" id="height" aria-describedby="cm-unit" onchange="inputChange(this.value, 'height')" />
-					<span class="input-group-addon" id="cm-unit">cm</span>
+      <div class="row" >
+      	<div class="col-6">
+      		<h1>Kalkulator BMI</h1>
+					<div class="form-group row mt-2" >
+						<label for="height" class="col-2 col-form-label">Wzrost:</label>
+						<div class="col-4 input-group">
+							<input type="text" class="form-control" id="height" aria-describedby="cm-unit" />
+							<span class="input-group-addon" id="cm-unit">cm</span>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="weight" class="col-2 col-form-label">Waga:</label>
+						<div class="col-4 input-group">
+							<input type="text" class="form-control" id="weight" aria-describedby="kg-unit" /></p>
+							<span class="input-group-addon" id="kg-unit">kg</span>
+						</div>
+					</div>
+					<div class="row">
+						<input type="submit" class="btn" value="Zatwierdź" onclick="calculateBMI();">
+					</div>
 				</div>
-				<div class="col-6">
-					<input id="height-slider" type="range"  min="0" max="220" value="1" oninput="sliderChange(this.value, 'height')" />
+				<div id="bmiImg" class="col-6" >
+					<%= image_tag "bmi.jpg", class: "card-img-top", style: "width: 100%;" %>
+				</div> 
+				<div id="bmiDescr" class="col-6 d-none" >
+					<h4>Twoje BMI: <span id="output"></span></h2>
+					<h4><span id="comment"></span> </h2> 
+					<div id="bmi-description" ></div>
 				</div>
 			</div>
-			
-			<div class="form-group row">
-				<label for="weight" class="col-2 col-form-label">Waga:</label>
-				<div class="col-4 input-group">
-					<input type="text" class="form-control" id="weight" aria-describedby="kg-unit" onchange="inputChange(this.value, 'weight')" /></p>
-					<span class="input-group-addon" id="kg-unit">kg</span>
-				</div>
-				<div class="col-6">
-				  <input id="weight-slider" type="range"  min="0" max="200" value="0" oninput="sliderChange(this.value, 'weight')" />
-			  </div>
-			</div>
-
-			<input type="submit" class="btn" value="Zatwierdź" onclick="calculateBMI();">
-			<h4>Twoje BMI: <span id="output"></span></h2>
-			<h4><span id="comment"></span> </h2> 
     </div>
   </div>
 

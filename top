@@ -1,0 +1,342 @@
+[33mcommit 4098ccd6ee43cb190032f608da30e213d6d06375[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31mheroku/master[m[33m)[m
+Author: Mikolaj <mikolaj.klein@gmail.com>
+Date:   Wed Nov 22 16:01:04 2017 +0000
+
+    poprawki bmi
+
+[33mcommit 7130b423190b7419caf863f8d400d7133a29ee19[m
+Author: Mikolaj <mikolaj.klein@gmail.com>
+Date:   Wed Nov 15 08:55:11 2017 +0000
+
+    meta tags
+
+[33mcommit 5940c617be253ca9242eb5cfdd962a4c9f069912[m
+Merge: 875c3d5 8eaaaee
+Author: Mikolaj <mikolaj.klein@gmail.com>
+Date:   Wed Nov 15 08:48:17 2017 +0000
+
+    Merge branch 'master' of github.com:marcin-kopanski/diet-coach-website
+
+[33mcommit 8eaaaee5e3bca27c9d062aec2a7d5d42b3e2ee3b[m[33m ([m[1;31morigin/master[m[33m)[m
+Merge: 132247b cc1213c
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Wed Nov 15 09:38:38 2017 +0100
+
+    Merge branch 'master' of github.com:marcin-kopanski/diet-coach-website
+
+[33mcommit 132247baf016e5e7e434a07501fca5573b1c2cb4[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Wed Nov 15 09:38:19 2017 +0100
+
+    Meta tags helper
+
+[33mcommit 875c3d5e853d8781240c5abf23bd545d830435ea[m
+Author: Mikolaj <mikolaj.klein@gmail.com>
+Date:   Wed Nov 15 00:22:53 2017 +0000
+
+    style mapy
+
+[33mcommit 9985d989294f74659dfc171b14b75f9231acced4[m
+Author: Mikolaj <mikolaj.klein@gmail.com>
+Date:   Tue Nov 14 22:40:10 2017 +0000
+
+    oryginalne, skompresowane obrazy
+
+[33mcommit 10d91d42c59c927638d7ec20d642fa8cd2582bc2[m
+Author: Mikolaj <mikolaj.klein@gmail.com>
+Date:   Tue Nov 14 18:41:57 2017 +0000
+
+    commit
+
+[33mcommit e7bbc1d240786125eef7a7a252b909452088be30[m
+Merge: 9d011cf cc1213c
+Author: Mikolaj <mikolaj.klein@gmail.com>
+Date:   Tue Nov 14 16:49:05 2017 +0000
+
+    Merge branch 'master' of github.com:marcin-kopanski/diet-coach-website
+
+[33mcommit cc1213c7e9a3861caae8e5798934d61e289be3fe[m
+Merge: 7af61ef 45b07fe
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Tue Nov 14 17:47:15 2017 +0100
+
+    Merge pull request #1 from marcin-kopanski/mik
+    
+    Mik
+
+[33mcommit 45b07fe2f56820896c08aca3449a9072358816ba[m[33m ([m[1;31morigin/mik[m[33m, [m[1;32mmik[m[33m)[m
+Author: Mikolaj <mikolaj.klein@gmail.com>
+Date:   Tue Nov 14 16:43:48 2017 +0000
+
+    zmiany mikolaja
+
+[33mcommit 9d011cf09022ad327b51c4492880eba628c1842f[m
+Author: Mikolaj <mikolaj.klein@gmail.com>
+Date:   Tue Nov 14 16:09:18 2017 +0000
+
+    fix
+
+[33mcommit 4df26dafad45c93361ba58907a94157dba9a7a80[m
+Author: Mikolaj <mikolaj.klein@gmail.com>
+Date:   Tue Nov 14 16:05:31 2017 +0000
+
+    fix
+
+[33mcommit 2db3448446c4b169c82205d010bc5e209951ed07[m
+Author: Mikolaj <mikolaj.klein@gmail.com>
+Date:   Fri Nov 10 10:40:01 2017 +0000
+
+    init
+
+[33mcommit 7af61ef1a7349b5fe6d442ea354b91a6042b8ca5[m[33m ([m[1;32mmik_release[m[33m)[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Thu Nov 9 23:50:45 2017 +0100
+
+    Contact form working and placed in modal window. Fixed blog comments.
+
+[33mcommit 598c5d790df34ec6af4020b71bffa2e1c4653deb[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Thu Nov 9 12:30:43 2017 +0100
+
+    Contact form config
+
+[33mcommit 042c9a07e70c755efecaa65546a16daf5e01605b[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Wed Nov 8 16:20:15 2017 +0100
+
+    merge
+
+[33mcommit b2e86b59865d3c7d6b5a4fd800a66f88510637ac[m
+Author: Marcin Kopanski <mk@pwrs.pl>
+Date:   Wed Nov 8 16:19:27 2017 +0100
+
+    Steps header size change
+
+[33mcommit 7ac953e4ad3fe23fa5b7dcfcc96bbb3980d2eb10[m
+Merge: 8fdb33d d6ecfbe
+Author: Marcin Kopanski <mk@pwrs.pl>
+Date:   Wed Nov 8 16:02:34 2017 +0100
+
+    Merge branch 'master' of github.com:marcin-kopanski/diet-coach-website
+
+[33mcommit 8fdb33d845e32b3035dd623af7f4b18b01e696e3[m
+Author: Marcin Kopanski <mk@pwrs.pl>
+Date:   Wed Nov 8 16:00:47 2017 +0100
+
+    Steps update
+
+[33mcommit d6ecfbe80978635936ed61b4d88a01f628a34fb3[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Tue Nov 7 23:15:41 2017 +0100
+
+    Added missing files
+
+[33mcommit 09076c73e73d03a842dbb3dfd49da9bd09c9273b[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Tue Nov 7 23:03:35 2017 +0100
+
+    Recipe layout fixes and model changes
+
+[33mcommit 4fc753a7e503cb4fc887c7c1e9be3609f142df26[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Tue Nov 7 21:34:50 2017 +0100
+
+    Fix for my own gem, moved to github
+
+[33mcommit df9411ddd94fb4fb69622e4827adb23e64e526c6[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Mon Nov 6 11:26:34 2017 +0100
+
+    Edit and create style and layout for blogs and recipes
+
+[33mcommit 4b13ba18044b31bda36e1f443480a49997efd998[m[33m ([m[1;33mtag: v0.2[m[33m)[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Thu Nov 2 20:17:19 2017 +0100
+
+    Style changes and layout fixes
+
+[33mcommit c341ec16e8289fad0fad879b843ad70079fa940c[m
+Author: Marcin Kopanski <mk@pwrs.pl>
+Date:   Thu Nov 2 16:38:00 2017 +0100
+
+    Blog form fixed, blogs pagination centered
+
+[33mcommit 0c79d67b37f2e933a0e90de87bc6c5e3b5363fe5[m
+Author: Marcin Kopanski <mk@pwrs.pl>
+Date:   Thu Nov 2 16:21:18 2017 +0100
+
+    Blog list pagination centered
+
+[33mcommit ea2ebe8161d56c1fdf62717aee35087373896960[m
+Author: Marcin Kopanski <mk@pwrs.pl>
+Date:   Thu Nov 2 16:16:55 2017 +0100
+
+    Blog post tweak
+
+[33mcommit c83d11f4af0013258944f5cdf8ae80b3e5638231[m
+Author: Marcin Kopanski <mk@pwrs.pl>
+Date:   Thu Nov 2 14:46:52 2017 +0100
+
+    Few fixes - pricing and contact
+
+[33mcommit e628d6078125b8c5c7b2b5742bb12e15d723a346[m
+Author: Marcin Kopanski <mk@pwrs.pl>
+Date:   Thu Nov 2 14:06:18 2017 +0100
+
+    Devise login fix
+
+[33mcommit 200e161ad028e951aeadae76e02117bb9e9c6ea0[m
+Author: Marcin Kopanski <mk@pwrs.pl>
+Date:   Thu Nov 2 13:41:51 2017 +0100
+
+    Fixes
+
+[33mcommit 0cc3858658abb46d735ddacd5f1c4d0f80504abb[m
+Author: Marcin Kopanski <mk@pwrs.pl>
+Date:   Thu Nov 2 12:04:58 2017 +0100
+
+    Contact form
+
+[33mcommit 0e62c96d92a3cb50f7799fed4bcbd81de370e6ea[m
+Author: Marcin Kopanski <mk@pwrs.pl>
+Date:   Thu Nov 2 11:41:56 2017 +0100
+
+    Recipes
+
+[33mcommit f7b4fc3cff7424dd941e44d27b6d9b98aca6bad7[m
+Author: Marcin Kopanski <mk@pwrs.pl>
+Date:   Thu Nov 2 10:32:28 2017 +0100
+
+    Site name
+
+[33mcommit 8b0f7351628810436c4f31c3eb5d1c9acd1f0334[m
+Author: Marcin Kopanski <mk@pwrs.pl>
+Date:   Thu Nov 2 09:18:07 2017 +0100
+
+    Blog pages layout
+
+[33mcommit 9dd260b46f9f6b505572acc2e9fe8b9e05b05edf[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Wed Nov 1 23:21:54 2017 +0100
+
+    migration fix
+
+[33mcommit 153a10978cc7628ab784f9132fb78274c1611d9f[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Wed Nov 1 23:13:04 2017 +0100
+
+    Blog and config files
+
+[33mcommit b416e192bef6706b9ce177aa524b84ec976f8a35[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Wed Nov 1 23:11:49 2017 +0100
+
+    Layout and style changes
+
+[33mcommit e1a0508128ff7d4513ef25ce72824889632bf9ed[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Wed Nov 1 22:08:55 2017 +0100
+
+    Blog added and additional gems configured
+
+[33mcommit fd8f54d1997f94eb2a3eb2240ee8de5286a2fd0a[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Sun Oct 22 19:03:28 2017 +0200
+
+    database.yml fix for prod, test
+
+[33mcommit 8cf0831f707190ad9b35fc8bcd33c7ca5a9d2049[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Sun Oct 22 18:49:00 2017 +0200
+
+    Moved sqlite3 gem to only in development
+
+[33mcommit 09a363c8cae5be3ebf8f5364f32cb99b74285842[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Sun Oct 22 18:45:54 2017 +0200
+
+    Using pg in test and production
+
+[33mcommit d2a2ab9a35dfcbb529f8e55634d71c445d23c1a5[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Sun Oct 22 18:43:06 2017 +0200
+
+    Cinfiguration for heroku
+
+[33mcommit 6277b0abf09fd789df42e3e2dfab4e74586a3068[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Sun Oct 22 16:57:34 2017 +0200
+
+    Fixes and missing files
+
+[33mcommit ece8fbd51f8784bb73892d06ed79ba3909d1ae0f[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Sun Oct 22 14:00:02 2017 +0200
+
+    fixes in offer and pricing pages
+
+[33mcommit 179230fa8768c66daa4bac22803a1e71938ddce4[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Sun Oct 22 13:41:27 2017 +0200
+
+    Implemented offer and contact pages. A few fixes here and there.
+
+[33mcommit e4292ca2b8d23bc945e8cda618d9fa657ccd361b[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Sun Oct 22 00:15:22 2017 +0200
+
+    Fix for home page background
+
+[33mcommit 4edccabdc1bdb7455c6db490db63e9977a22b8d3[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Sun Oct 22 00:01:32 2017 +0200
+
+    Implemented full pricing page
+
+[33mcommit 1cad8f7f6360eed25659001c4864ee486c6f1599[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Sat Oct 21 21:04:30 2017 +0200
+
+    Implemented responsivness for about-me page
+
+[33mcommit fd734ae99ffcb7f053eb9cdeb66e91d596de3e9d[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Sat Oct 21 19:59:00 2017 +0200
+
+    Implemented about me page and footer with copyrights
+
+[33mcommit 2dd762e8ad97fe5e3a1230bbfa209a0a8646fe5f[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Sat Oct 21 18:18:43 2017 +0200
+
+    Implementing styles to devise pages
+
+[33mcommit 10dd26c311d50b6e1ba457205e679494c635ab67[m
+Author: Marcin Kopański <marcin.kopanski@gmail.com>
+Date:   Sat Oct 21 09:51:15 2017 +0200
+
+    Devise and petergate added
+
+[33mcommit adc6ebbd82af2976772a55b601f328a0331f0a2a[m
+Author: Marcin <marcin.kopanski@gmail.com>
+Date:   Fri Oct 20 20:46:27 2017 +0000
+
+    Implemented devise
+
+[33mcommit df305d8aec56f67e1730d43911fe9c5bafc9914e[m
+Author: Marcin <marcin.kopanski@gmail.com>
+Date:   Mon Oct 9 15:11:14 2017 +0000
+
+    Routes for static pages
+
+[33mcommit cd8ff32dfbf5573d88a53ff214aed6d027ec0a01[m
+Author: Marcin <marcin.kopanski@gmail.com>
+Date:   Mon Oct 9 11:25:06 2017 +0000
+
+    New gems and implemented home layout
+
+[33mcommit 55b84f1e7c9b9162cb12bbc0cf954cc92ebc2784[m
+Author: Marcin <marcin.kopanski@gmail.com>
+Date:   Fri Oct 6 23:02:33 2017 +0000
+
+    Init
