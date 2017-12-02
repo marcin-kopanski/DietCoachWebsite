@@ -6,7 +6,7 @@ module DefaultPageContentConcern
    end
 
    def set_page_defaults
-      @page_title = "Gabinet Równowaga"
+      @page_title = "Dietetyk Psycholog Gdańsk"
       @seo_keywords = ""
    end
 end

@@ -143,28 +143,25 @@ body {
 	bottom: 0;
 	width: 5px;
 }
-.map:before{
+.map:before {
 	bottom: -5px;
 	left: 0;
 	right: 0;
 	height: 5px;
 }
-.map:after{
+.map:after {
 	left: -5px;
 	top: 0;
 	bottom: 0;
 	width: 5px;
 }
 
-#height, #weight{
+#height, #weight {
 	max-width: 80px;
 }
 
-<<<<<<< HEAD
-=======
-.bmi-cal{
+.bmi-cal {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
->>>>>>> 496f510ad39ca8460b30fe58b3bf482cb9bad730

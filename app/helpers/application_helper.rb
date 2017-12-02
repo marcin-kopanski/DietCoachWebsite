@@ -6,7 +6,7 @@ module ApplicationHelper
   def image_generator(width:,height:)
     "https://placehold.it/#{width}x#{height}"
   end
-  
+
   def meta_tags
     
   end
