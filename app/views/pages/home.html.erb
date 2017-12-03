@@ -33,8 +33,8 @@
     <h2 class="text-primary mb-4">Przykładowe przepisy</h2>
 
     <div class="card-deck recipes-deck">
-      <% if @featured_recipes[0] %>
-        <div class="card mb-3 mb-md-0">
+      <div class="card mb-3 mb-md-0">
+        <% if @featured_recipes[0] %>
           <%= image_tag recipe_img(@featured_recipes[0].thumb_image, 'thumb'), width: '100%' %>
           <div class="card-body text-center">
             <p class="h4 card-title text-primary">
@@ -42,36 +42,32 @@
             </p>
             <p class="text-justify"><%= @featured_recipes[0].subtitle %></p>
           </div>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
 
-      <% if @featured_recipes[1] %>
-        <div class="col-md-4">
-          <div class="card mb-3 mb-md-0">
-            <%= image_tag recipe_img(@featured_recipes[1].thumb_image, 'thumb'), width: '100%' %>
-            <div class="card-body text-center">
-              <p class="h4 card-title text-primary">
-                <%= link_to @featured_recipes[1].title, @featured_recipes[1] %>
-              </p>
-              <p class="text-justify"><%= @featured_recipes[1].subtitle %></p>
-            </div>
+      <div class="card mb-3 mb-md-0">
+        <% if @featured_recipes[1] %>
+          <%= image_tag recipe_img(@featured_recipes[1].thumb_image, 'thumb'), width: '100%' %>
+          <div class="card-body text-center">
+            <p class="h4 card-title text-primary">
+              <%= link_to @featured_recipes[1].title, @featured_recipes[1] %>
+            </p>
+            <p class="text-justify"><%= @featured_recipes[1].subtitle %></p>
           </div>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
 
-      <% if @featured_recipes[2] %>
-        <div class="col-md-4">
-          <div class="card mb-3 mb-md-0">
-            <%= image_tag recipe_img(@featured_recipes[2].thumb_image, 'thumb'), width: '100%' %>
-            <div class="card-body text-center">
-              <p class="h4 card-title text-primary">
-                <%= link_to @featured_recipes[2].title, @featured_recipes[2] %>
-              </p>
-              <p class="text-justify"><%= @featured_recipes[2].subtitle %></p>
-            </div>
+      <div class="card mb-3 mb-md-0">
+        <% if @featured_recipes[2] %>
+          <%= image_tag recipe_img(@featured_recipes[2].thumb_image, 'thumb'), width: '100%' %>
+          <div class="card-body text-center">
+            <p class="h4 card-title text-primary">
+              <%= link_to @featured_recipes[2].title, @featured_recipes[2] %>
+            </p>
+            <p class="text-justify"><%= @featured_recipes[2].subtitle %></p>
           </div>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
