@@ -28,36 +28,48 @@
   </div>
 </div>
 
-<div class="bg-light py-3 mb-5">
+<div class="bg-light py-2 mb-5">
   <div class="container">
-    <div class="row">
+    <h2 class="text-primary mb-4">Przykładowe przepisy</h2>
+
+    <div class="card-deck recipes-deck">
       <% if @featured_recipes[0] %>
-        <div class="col-md-4">
+        <div class="card mb-3 mb-md-0">
           <%= image_tag recipe_img(@featured_recipes[0].thumb_image, 'thumb'), width: '100%' %>
-          <h2 class="blog-post-title text-center">
-            <%= link_to @featured_recipes[0].title, @featured_recipes[0] %>
-          </h2>
-          <p class="text-justify"><%= @featured_recipes[0].subtitle %></p>
+          <div class="card-body text-center">
+            <p class="h4 card-title text-primary">
+              <%= link_to @featured_recipes[0].title, @featured_recipes[0] %>
+            </p>
+            <p class="text-justify"><%= @featured_recipes[0].subtitle %></p>
+          </div>
         </div>
       <% end %>
 
       <% if @featured_recipes[1] %>
         <div class="col-md-4">
-          <%= image_tag recipe_img(@featured_recipes[1].thumb_image, 'thumb'), width: '100%' %>
-          <h2 class="blog-post-title text-center">
-            <%= link_to @featured_recipes[1].title, @featured_recipes[1] %>
-          </h2>
-          <p class="text-justify"><%= @featured_recipes[1].subtitle %></p>
+          <div class="card mb-3 mb-md-0">
+            <%= image_tag recipe_img(@featured_recipes[1].thumb_image, 'thumb'), width: '100%' %>
+            <div class="card-body text-center">
+              <p class="h4 card-title text-primary">
+                <%= link_to @featured_recipes[1].title, @featured_recipes[1] %>
+              </p>
+              <p class="text-justify"><%= @featured_recipes[1].subtitle %></p>
+            </div>
+          </div>
         </div>
       <% end %>
 
       <% if @featured_recipes[2] %>
         <div class="col-md-4">
-          <%= image_tag recipe_img(@featured_recipes[2].thumb_image, 'thumb'), width: '100%' %>
-          <h2 class="blog-post-title text-center">
-            <%= link_to @featured_recipes[2].title, @featured_recipes[2] %>
-          </h2>
-          <p class="text-justify"><%= @featured_recipes[2].subtitle %></p>
+          <div class="card mb-3 mb-md-0">
+            <%= image_tag recipe_img(@featured_recipes[2].thumb_image, 'thumb'), width: '100%' %>
+            <div class="card-body text-center">
+              <p class="h4 card-title text-primary">
+                <%= link_to @featured_recipes[2].title, @featured_recipes[2] %>
+              </p>
+              <p class="text-justify"><%= @featured_recipes[2].subtitle %></p>
+            </div>
+          </div>
         </div>
       <% end %>
     </div>
@@ -114,37 +126,44 @@
 			   // document.getElementById("answer").value = output;
 			}
 		</script>
-    <div class="jumbotron bg-primary-light text-dark ">
-      <div class="row" >
-      	<div class="col-6">
-      		<h1>Kalkulator BMI</h1>
-					<div class="form-group row mt-2" >
-						<label for="height" class="col-2 col-form-label">Wzrost:</label>
-						<div class="col-4 input-group">
-							<input type="text" class="form-control" id="height" aria-describedby="cm-unit" />
-							<span class="input-group-addon" id="cm-unit">cm</span>
-						</div>
-					</div>
-					<div class="form-group row">
-						<label for="weight" class="col-2 col-form-label">Waga:</label>
-						<div class="col-4 input-group">
-							<input type="text" class="form-control" id="weight" aria-describedby="kg-unit" /></p>
-							<span class="input-group-addon" id="kg-unit">kg</span>
-						</div>
-					</div>
-					<div class="row">
-						<input type="submit" class="btn" value="Zatwierdź" onclick="calculateBMI();">
-					</div>
-				</div>
-				<div id="bmiImg" class="col-6" >
-					<%= image_tag "bmi.jpg", class: "card-img-top", style: "width: 100%;" %>
-				</div>
-				<div id="bmiDescr" class="col-6 d-none" >
-					<h4>Twoje BMI: <span id="output"></span></h2>
-					<h4><span id="comment"></span> </h2>
-					<div id="bmi-description" ></div>
-				</div>
-			</div>
+    <div class="jumbotron bg-primary-light text-dark px-5">
+      <h2 class="mb-4">Kalkulator BMI</h2>
+
+      <div class="row no-gutters">
+        <div class="col-12 col-md-3">
+          <div class="row form-group form-inline">
+            <label for="height" class="col-4 d-inline">Wzrost:</label>
+            <div class="col-7 input-group pl-0">
+              <input type="text" class="form-control" id="height" aria-describedby="cm-unit" />
+              <span class="input-group-addon" id="cm-unit">cm</span>
+            </div>
+          </div>
+
+          <div class="row form-group form-inline">
+            <label for="weight" class="col-4 d-inline">Waga:</label>
+            <div class="col-7 input-group pl-0">
+              <input type="text" class="form-control" id="weight" aria-describedby="kg-unit" />
+              <span class="input-group-addon" id="kg-unit">kg</span>
+            </div>
+          </div>
+
+          <div class="row form-group form-inline">
+            <div class="col-4 d-inline"></div>
+            <div class="col-5 input-group px-0">
+              <input type="submit" class="btn btn-primary btn-block" value="Zatwierdź" onclick="calculateBMI();">
+            </div>
+          </div>
+        </div>
+
+  			<div id="bmiImg" class="col-12 col-md-9" >
+  				<%= image_tag "bmi.jpg", class: "card-img-top", style: "width: 100%;" %>
+  			</div>
+  			<div id="bmiDescr" class="col-12 col-md-9 d-none" >
+  				<h4>Twoje BMI: <span id="output"></span></h2>
+  				<h4><span id="comment"></span> </h2>
+  				<div id="bmi-description" ></div>
+  			</div>
+      </div>
     </div>
   </div>
 

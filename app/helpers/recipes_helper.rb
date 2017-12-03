@@ -5,7 +5,7 @@ module RecipesHelper
       if img.model.thumb_image?
         img
       else
-        image_generator(height: '350', width: '200')
+        image_generator(height: '200', width: '350')
       end
     else
       if img.model.thumb_image?
