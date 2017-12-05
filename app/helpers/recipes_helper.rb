@@ -1,12 +1,18 @@
 module RecipesHelper
 
-  def recipe_img img
-    if img.model.main_image?
-      img
-    # elsif type == 'thumb'
-    #   image_generator(height: '200', width: '350')
+  def recipe_img img, type
+    if type == 'thumb'
+      if img.model.thumb_image?
+        img
+      else
+        image_generator(height: '200', width: '350')
+      end
     else
-      image_generator(height: '450', width: '730')
+      if img.model.thumb_image?
+        img
+      else
+        image_generator(height: '450', width: '730')
+      end
     end
   end
 end

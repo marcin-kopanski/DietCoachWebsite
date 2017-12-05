@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171107212158) do
+ActiveRecord::Schema.define(version: 20171202212313) do
 
   create_table "blogs", force: :cascade do |t|
     t.string "title"
@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(version: 20171107212158) do
     t.boolean "featured"
     t.text "ingredients"
     t.text "subtitle"
+    t.text "thumb_image"
     t.index ["slug"], name: "index_recipes_on_slug", unique: true
   end
 

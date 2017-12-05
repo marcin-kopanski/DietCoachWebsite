@@ -108,6 +108,12 @@ body {
   min-height: 360px;
 }
 
+.recipes-deck {
+  .card {
+    max-width: 348px;
+  }
+}
+
 .map {
     width: 100%;
     height: 100%;
@@ -143,25 +149,33 @@ body {
 	bottom: 0;
 	width: 5px;
 }
-.map:before{
+.map:before {
 	bottom: -5px;
 	left: 0;
 	right: 0;
 	height: 5px;
 }
-.map:after{
+.map:after {
 	left: -5px;
 	top: 0;
 	bottom: 0;
 	width: 5px;
 }
 
-#height, #weight{
+#height, #weight {
 	max-width: 80px;
 }
 
+<<<<<<< HEAD
 .bmi-cal{
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
+=======
+.bmi-cal {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+>>>>>>> fae5fe7eeeb547aaa3f43f41fdfb631b46b1025c
