@@ -7,6 +7,7 @@ module DefaultPageContentConcern
 
    def set_page_defaults
       @page_title = "Dietetyk Psycholog Gdańsk"
-      @seo_keywords = ""
+      @page_description = "Poradnia dietetyczna w Gdańsku, układanie diet, doradztwo żywieniowe, motywacja"
+      @seo_keywords = "dietetyk, dietetyk gdańsk, trójmiasto, dieta, odchudzanie, równowaga"
    end
 end
