@@ -124,7 +124,7 @@
 		</script>
     <div class="jumbotron bg-primary-light text-dark px-5">
       <h2 class="mb-4">Kalkulator BMI</h2>
-
+			
       <div class="row no-gutters">
         <div class="col-12 col-md-3">
           <div class="row form-group form-inline">
@@ -150,10 +150,7 @@
             </div>
           </div>
         </div>
-
-  			<div id="bmiImg" class="col-12 col-md-9" >
-  				<%= image_tag "bmi.jpg", class: "card-img-top", style: "width: 100%;" %>
-  			</div>
+  			
   			<div id="bmiDescr" class="col-12 col-md-9 d-none" >
   				<h4>Twoje BMI: <span id="output"></span></h2>
   				<h4><span id="comment"></span> </h2>
@@ -162,8 +159,6 @@
       </div>
     </div>
   </div>
-
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXADZtpBtC4Zdrhh40pYgAxIecba_0OLg&callback=initMap"></script>
 <%= render "shared/contact" %>
 
 <%= render "shared/contact_modal" %>

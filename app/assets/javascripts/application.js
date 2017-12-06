@@ -19,20 +19,5 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
-   function initMap() {
-      console.log("Init map");
-   		map = new google.maps.Map(document.getElementById("map"), {
-   		zoom: 15,
-   		center: new google.maps.LatLng(54.38008248278, 18.60375881195),
-   		mapTypeId: 'roadmap',
-   		streetViewControl: false,
-   		mapTypeControl: false
-   	});
-   	
-   	var marker = new google.maps.Marker({
-   		  position:  new google.maps.LatLng(54.37733616018838, 18.60883355140686),
-   		  map: map,
-   		  animation: google.maps.Animation.BOUNCE
-   	});
-   }
+
 
