@@ -24,7 +24,7 @@ module DietCoach
 
     # Strong Params
     # conflig.action_controller.permit_all_parameters = true
-
+    config.force_ssl = true
     # mk custom
     config.eager_load_paths << "#{Rails.root}/lib"
   end
