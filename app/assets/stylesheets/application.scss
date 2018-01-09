@@ -69,6 +69,7 @@ body {
 .blog-header,
 .pricing-header,
 .about-me-header,
+.bmi-img,
 .main-header {
     -webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
@@ -131,6 +132,7 @@ body {
     min-height: 400px;
     max-width: 640px;
     max-height: 400px;
+    
 }
 .map-container:before, .map-container:after, .map:before, .map:after {
 	position: absolute;
@@ -178,4 +180,18 @@ body {
     -webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 8px 6px -6px #999; 
+}
+
+.bmi-img{
+    background: image-url('bmi.jpg') no-repeat;
+    background-size: 100%
+}
+
+.container-bmi{
+    max-width: 800px;
+    height: 480px;
+}
+
+.map-api{
+    background-image: url(https://maps.googleapis.com/maps/api/staticmap?center=54.38008248278,18.60375881195&zoom=15&scale=1&size=640x400&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:%7C54.37733616018838,18.60883355140686);
 }
