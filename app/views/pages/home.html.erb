@@ -85,8 +85,7 @@
       
       				height = height / 100;
       				var bmi=weight/Math.pow(height,2);
-      				document.getElementById("bmiImg").className = "d-none";
-      				document.getElementById("bmiDescr").classList.remove("d-none");
+      				document.getElementById("bmi-result").classList.remove("d-none");
       				document.getElementById("output").innerText=Math.round(bmi*100)/100;
       
       				var output =  Math.round(bmi*100)/100;
@@ -153,16 +152,28 @@
               </div>
             </div>
       			
-      			<div id="bmiDescr" class="col-12 col-md-9 d-none" >
-      				<h4>Twoje BMI: <span id="output"></span></h4>
-      				<h4><span id="comment"></span> </h4>
-      				<div id="bmi-description" ></div>
-      			</div>
+      			
       		</div>
       	</div>
       </div>
     </div>
   </div>
+  
+  <div id="bmi-result" class="bg-light py-2 mb-5 d-none">
+    <div class="container container-bmi h-100">
+      <div class="card-deck flex-column flex-lg-row">
+        <div class="card mb-3 mb-md-0 p-3">
+            <div id="bmiDescr" class="col-12 text-justify" >
+      				<h4 class="text-primary">Twoje BMI: <span id="output"></span></h4>
+      				<h4 class="text-primary"><span id="comment"></span> </h4>
+      				<div id="bmi-description" ></div>
+      			</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
 <%= render "shared/contact" %>
 
 <%= render "shared/contact_modal" %>
