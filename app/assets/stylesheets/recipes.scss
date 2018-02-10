@@ -1,0 +1,9 @@
+.recipe {
+    transition: all .3s;
+}
+
+.recipe:hover {
+    background-color: #FFF;
+    cursor: pointer;
+    transform: scale(1.02);
+}
