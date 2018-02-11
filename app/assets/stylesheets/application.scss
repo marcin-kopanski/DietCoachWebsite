@@ -5,6 +5,7 @@
 @import "blogs";
 @import "pages";
 @import "recipes";
+@import "map";
 
 html {
   position: relative;
@@ -126,47 +127,6 @@ body {
     margin-left: 100px;
 }
 
-.map-container {
-	position: relative;
-	overflow: hidden;
-	min-width: 640px;
-    min-height: 400px;
-    max-width: 640px;
-    max-height: 400px;
-    
-}
-.map-container:before, .map-container:after, .map:before, .map:after {
-	position: absolute;
-	display: block;
-	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-	content: '';
-	z-index: 5;
-}
-.map-container:before {
-	top: -5px;
-	left: 0;
-	right: 0;
-	height: 5px;
-}
-.map-container:after {
-	right: -5px;
-	top: 0;
-	bottom: 0;
-	width: 5px;
-}
-.map:before {
-	bottom: -5px;
-	left: 0;
-	right: 0;
-	height: 5px;
-}
-.map:after {
-	left: -5px;
-	top: 0;
-	bottom: 0;
-	width: 5px;
-}
-
 #height, #weight {
 	max-width: 80px;
 }
@@ -191,8 +151,4 @@ body {
 .container-bmi{
     max-width: 800px;
     height: 480px;
-}
-
-.map-api{
-    background-image: url(https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyAaCjzAFc6QAQq9NN-UAuncO-W3ZPkdzYY&center=54.38008248278,18.60375881195&zoom=15&scale=1&size=640x400&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:%7C54.37733616018838,18.60883355140686);
 }
