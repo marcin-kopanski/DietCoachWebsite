@@ -142,14 +142,13 @@ body {
     box-shadow: 0 8px 6px -6px #999; 
 }
 
-.bmi-img{
-    background: image-url('bmi.jpg') no-repeat;
-    background-size: 100%
-}
-
 .container-bmi{
     max-width: 800px;
-    height: 480px;
+    height: 100%;
+}
+
+.bmi-img{
+    background-color: white;
 }
 
 .google-map {
@@ -167,4 +166,14 @@ body {
     .google-map img{
       box-shadow: 3px 3px 5px 0px #1d1d1dcc;
     }
+    
+    .container-bmi{
+        height: 480px !important;
+    }
+    
+    .bmi-img{
+        background: image-url('bmi.jpg') no-repeat;
+        background-size: 100%
+    }
 }
+
