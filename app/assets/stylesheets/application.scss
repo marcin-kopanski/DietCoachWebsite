@@ -147,7 +147,12 @@ body {
     height: 100%;
 }
 
+.container-bmi-res{
+    max-width: 800px;
+}
+
 .bmi-img{
+    border: 1px solid rgba(0,0,0,0.125);
     background-color: white;
 }
 
@@ -164,7 +169,7 @@ body {
 
 @include media-breakpoint-up(md) {
     .google-map img{
-      box-shadow: 3px 3px 5px 0px #1d1d1dcc;
+      box-shadow: 3px 3px 5px 0px #1d1d1d61;
     }
     
     .container-bmi{
