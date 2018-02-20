@@ -15,7 +15,7 @@
     <% end %>
 
     <div class="row my-3">
-      <h2 class="mx-auto text-primary"><%= markdown @recipe.title %></h2>
+      <h2 class="mx-auto text-primary f-cursive"><strong><%= markdown @recipe.title %></strong></h2>
     </div>
 
     <div class="row">
@@ -24,14 +24,14 @@
       </div>
 
       <div class="col-4 text-justify">
-        <h4 class="text-primary">Składniki:</h4>
+        <h4 class="text-primary f-cursive"><strong>Składniki:</strong></h4>
         <%= markdown @recipe.ingredients %>
       </div>
     </div>
 
     <div class="row">
       <div class="col-12">
-        <h4 class="text-primary">Opis przygotowania:</h4>
+        <h4 class="text-primary f-cursive"><strong>Opis przygotowania:</strong></h4>
         <p><%= markdown @recipe.body %></p>
       </div>
     </div>
