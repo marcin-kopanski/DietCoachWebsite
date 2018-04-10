@@ -1,11 +1,109 @@
 <%= render "shared/contact_header" %>
 
-<div class="bg-light pt-4 mt-2">
+<div class="pt-5 mt-2">
+  <div class="container">
+    <div class="jumbotron jumbotron-sm bg-white mb-0">
+      
+      <div class="row text-dark">
+        
+        <div class="col-sm-12 col-md-4 d-flex align-items-center justify-content-center border-right-lg">
+          <div class="font-weight-bold">
+            <div class="row justify-content-center">
+              <i class="fa fa-phone fa-bg-circle fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="row justify-content-center mt-1">
+              <p>+48 883 657 833</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-12 col-md-4 d-flex align-items-center justify-content-center border-right-lg">
+          <div class="font-weight-bold">
+            <div class="row justify-content-center">
+              <i class="fa fa-envelope-o fa-bg-circle fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="row justify-content-center mt-1">
+              <p id="ide"> </p>
+  						<script>
+                  var username = "gab.rownowaga";
+      						var hostname = "gmail.com";
+      						var res = username + "@" + hostname;
+                  $('#ide').text(res);
+  						</script>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 align-items-center">
+          <div class="font-weight-bold">
+            <div class="row justify-content-center">
+              <i class="fa fa-map-marker fa-bg-circle fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="row justify-content-center text-center mt-1">
+              <p>Grunwaldzka 76/78, pok. 426</br>80-244 Gdańsk</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+        
+    </div>
+  </div>
+</div>
+
+<div class="text-dark py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8">
+        <script type="text/javascript">
+       		function initMap() {
+       		   console.log("Init map");
+       		   
+       				map = new google.maps.Map(document.getElementById("map2"), {
+       				zoom: 15,
+       				center: new google.maps.LatLng(54.38008248278, 18.60375881195),
+       				mapTypeId: 'roadmap',
+       				streetViewControl: false,
+       				mapTypeControl: false
+       			});
+       			var marker = new google.maps.Marker({
+       				  position:  new google.maps.LatLng(54.37733616018838, 18.60883355140686),
+       				  map: map
+       			});
+       		}
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaCjzAFc6QAQq9NN-UAuncO-W3ZPkdzYY&callback=initMap"></script>
+        
+			  <div class="map" id="map2"></div>
+			  
+      </div>
+      <div class="col-12 col-md-4 pl-4">
+        
+        <div class="znany-lekarz pt-5 pt-lg-0">
+          <a id="zl-url" class="zl-url" href="https://www.znanylekarz.pl/patrycja-piekarczyk/psycholog-dietetyk/gdansk" rel="nofollow" data-zlw-doctor="patrycja-piekarczyk" data-zlw-type="big_visit" data-zlw-opinion="false" data-zlw-hide-branding="true">Patrycja Piekarczyk - ZnanyLekarz.pl</a><script>!function($_x,_s,id){var js,fjs=$_x.getElementsByTagName(_s)[0];if(!$_x.getElementById(id)){js = $_x.createElement(_s);js.id = id;js.src = "//www.docplanner-platform.com/js/widget.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","zl-widget-s");</script>
+        </div>
+        <div style="padding-top: 33px">
+          <hr>
+          <div class="row">
+            <nav class="nav mx-auto">
+              <a href="https://www.facebook.com/dietetykgdanskwrzeszcz/" class="nav-link"><%= fa_icon "facebook 2x" %></a>
+              <a href="https://pl.linkedin.com/in/patrycja-piekarczyk-ba7362147" class="nav-link"><%= fa_icon "linkedin 2x" %></a>
+              <a href="#" class="nav-link"><%= fa_icon "twitter 2x" %></a>
+            </nav>
+          </div>
+          <hr>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-light pb-5 mt-2">
   <div class="container">
     <div class="jumbotron">
       <div class="col-sm-8 mx-auto">
         <p class="h1 card-title text-primary">Formularz kontaktowy</p>
-
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
           Wypełnij
         </button>
@@ -13,6 +111,5 @@
     </div>
   </div>
 </div>
-<%= render "shared/contact" %>
 
 <%= render "shared/contact_modal" %>

@@ -47,10 +47,10 @@ module ApplicationHelper
         url: recipes_path,
         title: "Przepisy"
       },
-      {
-        url: blogs_path,
-        title: "Blog"
-      },
+      #{
+      #  url: blogs_path,
+      #  title: "Blog"
+      #},
       {
         url: contact_path,
         title: "Kontakt"
