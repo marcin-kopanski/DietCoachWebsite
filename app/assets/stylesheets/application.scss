@@ -6,6 +6,11 @@
 @import "pages";
 @import "recipes";
 
+@font-face {
+    font-family: "englebert";
+    src: url('englebert-regular.ttf') format("truetype");
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -24,6 +29,10 @@ body {
       position: absolute;
       top: 10px;
     }
+  }
+  h2{
+      font-family: "englebert";
+      font-weight: 600;
   }
 }
 
