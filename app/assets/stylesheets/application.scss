@@ -11,6 +11,11 @@
     src: url('englebert-regular.ttf') format("truetype");
 }
 
+.englebert-600{
+    font-family: "englebert";
+    font-weight: 600;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -29,10 +34,6 @@ body {
       position: absolute;
       top: 10px;
     }
-  }
-  h2{
-      font-family: "englebert";
-      font-weight: 600;
   }
 }
 
