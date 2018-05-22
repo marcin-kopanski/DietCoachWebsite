@@ -14,13 +14,14 @@
 
     <% @recipes.each.with_index(1) do |recipe, index| %>
       <div class="row recipe px-3 py-4">
+        <%= link_to recipe, class: "row" do %>
         <div class="col-md-4 <%= 'order-1 order-md-12' if index.even? %>">
           <%= image_tag recipe_img(recipe.thumb_image, 'thumb'), width: '100%' %>
         </div>
         <div class="col-md-8 order-2">
           <div class="row">
             <div class="col">
-              <h2 class="blog-post-title"><%= link_to recipe.title, recipe %></h2>
+              <h2 class="blog-post-title englebert-600"> <%= markdown recipe.title %></h2>
             </div>
 
             <% if logged_in?(:site_admin) %>
@@ -30,6 +31,7 @@
 
           <p><%= markdown recipe.subtitle %></p>
         </div>
+      <% end %>
       </div>
     <% end %>
 
