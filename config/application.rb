@@ -11,6 +11,8 @@ module DietCoach
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
 
+    config.middleware.use Rack::Deflater
+    
     config.secret_key_base = ENV["SECRET_KEY_BASE"]
     
     config.assets.serve_static_files = true
