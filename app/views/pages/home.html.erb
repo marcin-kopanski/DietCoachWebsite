@@ -131,7 +131,9 @@
                 <label for="height" class="col-4 col-md-3 d-inline">Wzrost:</label>
                 <div class="col-8 col-md-9 input-group pl-0">
                   <input type="text" class="form-control" id="height" aria-describedby="cm-unit" />
-                  <span class="input-group-addon" id="cm-unit">cm</span>
+                  <div class="input-group-append">
+                    <span id="cm-unit" class="input-group-text">cm</span>
+                  </div>
                 </div>
               </div>
     
@@ -139,15 +141,15 @@
                 <label for="weight" class="col-4 col-md-3 d-inline">Waga:</label>
                 <div class="col-8 col-md-9 input-group pl-0">
                   <input type="text" class="form-control" id="weight" aria-describedby="kg-unit" />
-                  <span class="input-group-addon" id="kg-unit">kg</span>
+                  <div class="input-group-append">
+                    <span id="kg-unit" class="input-group-text">kg</span>
+                  </div>
+                </div>
                 </div>
               </div>
     
-              <div class="row form-group form-inline">
-                <div class="col-4 col-md-3 d-inline"></div>
-                <div class="col-8 col-md-4 input-group px-0">
-                  <input type="submit" class="btn btn-primary btn-block" value="Zatwierdź" onclick="calculateBMI();">
-                </div>
+              <div class="col-12 pt-2 form-group form-inline">
+                  <input type="submit" class="btn ml-2 col-7 btn-primary" value="Zatwierdź" onclick="calculateBMI();">
               </div>
             </div>
       			
