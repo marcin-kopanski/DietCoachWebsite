@@ -13,6 +13,14 @@ Rails.application.routes.draw do
       get :toggle_status
     end
   end
+  
+  if Rails.env.production?
+  constraints(:host => /^(?!dietetyk-rownowaga\.gda.pl)/i) do
+    match "/(*path)" => redirect {
+      |params, req| "https://dietetyk-rownowaga.gda.pl/#{params[:path]}"
+      },  via: [:get, :post]
+    end
+  end
 
   resources :recipes
 
