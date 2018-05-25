@@ -15,9 +15,10 @@ Rails.application.configure do
   config.action_controller.perform_caching = true
   config.cache_store = :memory_store
   
-  config.serve_static_assets = true
-
-  config.static_cache_control ="public, max-age=604800"
+  config.public_file_server.headers = {
+    'Cache-Control' => 'public, s-maxage=31536000, max-age=15552000',
+    'Expires' => "#{1.year.from_now.to_formatted_s(:rfc822)}"
+  }
   
 
   # Attempt to read encrypted secrets from `config/secrets.yml.enc`.
