@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://dietetyk-rownowaga.gda.pl/</loc>
+  <lastmod>2018-05-26T12:13:49+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://dietetyk-rownowaga.gda.pl/about-me</loc>
+  <lastmod>2018-05-26T12:13:49+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>https://dietetyk-rownowaga.gda.pl/pricing</loc>
+  <lastmod>2018-05-26T12:13:49+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dietetyk-rownowaga.gda.pl/offer</loc>
+  <lastmod>2018-05-26T12:13:49+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.40</priority>
+</url>
+<url>
+  <loc>https://dietetyk-rownowaga.gda.pl/recipes</loc>
+  <lastmod>2018-05-26T12:13:49+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.20</priority>
+</url>
+<url>
+  <loc>https://dietetyk-rownowaga.gda.pl/contact</loc>
+  <lastmod>2018-05-26T12:13:49+00:00</lastmod>'
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dietetyk-rownowaga.gda.pl/recipes/miodowo-orzechowa-owsianka</loc>
+  <lastmod>2018-05-26T12:13:49+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.10</priority>
+</url>
+<url>
+  <loc>https://dietetyk-rownowaga.gda.pl/recipes/rozgrzewajaca-zupa-dyniowa</loc>
+  <lastmod>2018-05-26T12:13:49+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.10</priority>
+</url>
+<url>
+  <loc>https://dietetyk-rownowaga.gda.pl/recipes/pieczone-pierogi-z-farszem-dyniowym</loc>
+  <lastmod>2018-05-26T12:13:49+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.10</priority>
+</url>
+</urlset>
