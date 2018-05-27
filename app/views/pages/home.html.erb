@@ -35,7 +35,7 @@
     <div class="card-deck recipes-deck">
       <div class="card mb-3 mb-md-0">
         <% if @featured_recipes[0] %>
-          <%= image_tag recipe_img(@featured_recipes[0].thumb_image, 'thumb'), width: '100%' %>
+          <%= image_tag recipe_img(@featured_recipes[0].thumb_image, 'thumb') %>
           <div class="card-body text-center">
             <p class="h4 card-title text-primary">
               <%= link_to @featured_recipes[0].title, @featured_recipes[0] %>
@@ -157,7 +157,6 @@
       		</div>
       	</div>
       </div>
-    </div>
   </div>
   
   <div id="bmi-result" class="bg-light py-2 mb-5 d-none">

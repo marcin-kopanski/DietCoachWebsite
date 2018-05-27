@@ -16,8 +16,8 @@ Rails.application.configure do
   config.cache_store = :memory_store
   
   config.public_file_server.headers = {
-    'Cache-Control' => 'public, s-maxage=31536000, max-age=15552000',
-    'Expires' => "#{1.year.from_now.to_formatted_s(:rfc822)}"
+    'Cache-Control' => 'public, s-maxage=648000, max-age=648000',
+    'Expires' => "#{1.month.from_now.to_formatted_s(:rfc822)}"
   }
   
 
