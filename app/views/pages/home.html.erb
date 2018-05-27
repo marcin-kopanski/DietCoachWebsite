@@ -47,7 +47,7 @@
 
       <div class="card mb-3 mb-md-0">
         <% if @featured_recipes[1] %>
-          <%= image_tag recipe_img(@featured_recipes[1].thumb_image, 'thumb'), width: '100%' %>
+          <%= image_tag recipe_img(@featured_recipes[1].thumb_image, 'thumb') %>
           <div class="card-body text-center">
             <p class="h4 card-title text-primary">
               <%= link_to @featured_recipes[1].title, @featured_recipes[1] %>
@@ -59,7 +59,7 @@
 
       <div class="card mb-3 mb-md-0">
         <% if @featured_recipes[2] %>
-          <%= image_tag recipe_img(@featured_recipes[2].thumb_image, 'thumb'), width: '100%' %>
+          <%= image_tag recipe_img(@featured_recipes[2].thumb_image, 'thumb') %>
           <div class="card-body text-center">
             <p class="h4 card-title text-primary">
               <%= link_to @featured_recipes[2].title, @featured_recipes[2] %>

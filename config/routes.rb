@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  
+  constraints(host: /^www\.(?!cute\.)/i) do 
+    match '(*any)', via: :all, to: redirect { |params, request|
+      URI.parse(request.url).tap { |uri| uri.host.sub!(/^www\./i, '') }.to_s 
+    }
+  end
+  
   mount ActionCable.server => '/cable'
 
   root to: 'pages#home'
@@ -14,14 +21,6 @@ Rails.application.routes.draw do
     end
   end
   
-  if Rails.env.production?
-  constraints(:host => /^(?!dietetyk-rownowaga\.gda.pl)/i) do
-    match "/(*path)" => redirect {
-      |params, req| "https://dietetyk-rownowaga.gda.pl/#{params[:path]}"
-      },  via: [:get, :post]
-    end
-  end
-
   resources :recipes
 
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
