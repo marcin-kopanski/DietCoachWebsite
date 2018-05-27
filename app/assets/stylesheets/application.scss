@@ -6,6 +6,8 @@
 @import "pages";
 @import "recipes";
 
+$cdnURL: 'https://s3.eu-central-1.amazonaws.com/';
+
 @font-face {
     font-family: "englebert";
     src: font-url('englebert-regular.ttf') format("truetype");
@@ -38,32 +40,32 @@ body {
 }
 
 .main-header {
-   background: image-url('header.jpg') no-repeat;
+   background: url('#{$cdnURL}gabinet-rownowaga/static/header.jpg') no-repeat;
    min-height: 500px;
 }
 
 .about-me-header {
-   background: image-url('header.jpg') no-repeat;
+   background: url('#{$cdnURL}gabinet-rownowaga/static/header.jpg') no-repeat;
 }
 
 .pricing-header {
-   background: image-url('header.jpg') no-repeat;
+   background: url('#{$cdnURL}gabinet-rownowaga/static/header.jpg') no-repeat;
 }
 
 .offer-header {
-   background: image-url('header.jpg') no-repeat;
+   background: url('#{$cdnURL}gabinet-rownowaga/static/header.jpg') no-repeat;
 }
 
 .recipes-header {
-   background: image-url('header.jpg') no-repeat;
+   background: url('#{$cdnURL}gabinet-rownowaga/static/header.jpg') no-repeat;
 }
 
 .blog-header {
-   background: image-url('header.jpg') no-repeat;
+   background: url('#{$cdnURL}gabinet-rownowaga/static/header.jpg') no-repeat;
 }
 
 .contact-header {
-   background: image-url('header.jpg') no-repeat;
+   background: url('#{$cdnURL}gabinet-rownowaga/static/header.jpg') no-repeat;
 }
 
 .contact-header,
@@ -191,7 +193,7 @@ body {
     }
     
     .bmi-img{
-        background: image-url('bmi.png') no-repeat;
+        background: url('#{$cdnURL}gabinet-rownowaga/static/bmi.png') no-repeat;
         background-size: 100%
     }
     
