@@ -25,12 +25,6 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://dietetyk-rownowaga.gda.pl/offer</loc>
-  <lastmod>2018-05-26T12:13:49+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.40</priority>
-</url>
-<url>
   <loc>https://dietetyk-rownowaga.gda.pl/recipes</loc>
   <lastmod>2018-05-26T12:13:49+00:00</lastmod>
   <changefreq>monthly</changefreq>
@@ -41,23 +35,5 @@
   <lastmod>2018-05-26T12:13:49+00:00</lastmod>'
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://dietetyk-rownowaga.gda.pl/recipes/miodowo-orzechowa-owsianka</loc>
-  <lastmod>2018-05-26T12:13:49+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.10</priority>
-</url>
-<url>
-  <loc>https://dietetyk-rownowaga.gda.pl/recipes/rozgrzewajaca-zupa-dyniowa</loc>
-  <lastmod>2018-05-26T12:13:49+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.10</priority>
-</url>
-<url>
-  <loc>https://dietetyk-rownowaga.gda.pl/recipes/pieczone-pierogi-z-farszem-dyniowym</loc>
-  <lastmod>2018-05-26T12:13:49+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.10</priority>
 </url>
 </urlset>
