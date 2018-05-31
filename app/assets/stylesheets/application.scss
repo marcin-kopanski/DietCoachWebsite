@@ -1,7 +1,6 @@
 @import "custom";
 @import "overrides";
 @import "bootstrap";
-@import "font-awesome";
 @import "blogs";
 @import "pages";
 @import "recipes";
@@ -223,17 +222,6 @@ body {
 
 .znany-lekarz{
     max-width: 400px;
-}
-
-.aaa{
-    font-family: 'Nunito', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    color: #88c057;
-}
-
-.bb{
-    background: #f8fff2 none repeat scroll 0 0;
 }
 
 .no-underline{text-decoration: none !important}
