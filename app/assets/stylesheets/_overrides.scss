@@ -1,5 +1,6 @@
 @import "custom";
 
+.btn{ border-radius: 0px !important;}
 .btn-primary {
    color: $white !important;
    cursor: pointer;
@@ -9,3 +10,31 @@
    padding: 1rem;
    border: 1px solid rgba(0, 0, 0, 0.125);
 }
+
+blockquote{
+   font-size: 1.15rem !important;
+   
+   .fa-quote-left{
+      margin-left: -15px;} 
+   
+   .blockquote-footer{
+      color: $my-primary;
+   }
+}
+
+#online-consulting {
+   .fa-skype { padding-right: 10px;}
+   .fa-envelope-o { padding-right: 8px;}
+}
+
+#contact-info {
+   font-size: 1.1rem;
+   
+   .fa-map-marker { margin-left: 3px;}
+   .fa-envelope-o {padding-right: 3px;}
+   .fa-phone {padding-right: 12px;}
+   .fa-user {padding-right: 15px;}
+}
+
+
+

@@ -17,12 +17,21 @@ $cdnURL: 'https://s3.eu-central-1.amazonaws.com/';
     font-weight: 600;
 }
 
+.text-orange { color: $orange !important; }
+.text-logo-green { color: #39B186 !important; }
+.text-logo-blue { color: #088AC9 !important; }
+.text-black { color: $black !important; }
+
+.bg-white { background-color: $white; }
+.bg-light-green { background: #f8fff0; }
+
 html {
   position: relative;
   min-height: 100%;
 }
 
 body {
+  font-family: 'Nunito', sans-serif;
   margin-bottom: 40px;
 }
 
@@ -35,12 +44,14 @@ body {
       position: absolute;
       top: 10px;
     }
+    h2 { margin-bottom: -8px !important }
   }
 }
 
 .main-header {
    background: url('#{$cdnURL}gabinet-rownowaga/static/header.jpg') no-repeat;
    min-height: 500px;
+   h1{ font-size: 2rem; }
 }
 
 .about-me-header {
@@ -119,13 +130,6 @@ body {
   }
 }
 
-.offer-card {
-  background: image-url('offer-jumbo.jpg') no-repeat;
-  background-position: right;
-  background-size: cover;
-  min-height: 360px;
-}
-
 .recipes-deck {
   .card {
     max-width: 348px;
@@ -136,41 +140,14 @@ body {
     margin-left: 100px;
 }
 
-.f-cursive{
-    font-family: cursive;
-}
-
 #height, #weight {
 	max-width: 80px;
-}
-
-.bmi-cal{
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
 }
 
 .shade-bottom {
     -webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 8px 6px -6px #999; 
-}
-
-.container-bmi{
-    max-width: 800px;
-    height: 100%;
-    
-    .bmi-img{
-        border: 1px solid rgba(0,0,0,0.125);
-        background-color: white;}
-    
-    #kg-unit {padding-left: 12px;}
-    
-    #cm-unit {padding-left: 8px;}
-}
-
-.container-bmi-res{
-    max-width: 800px;
 }
 
 .google-map {
@@ -187,15 +164,6 @@ body {
       box-shadow: 3px 3px 5px 0px #1d1d1d61;
     }
     
-    .container-bmi{
-        height: 480px !important;
-    }
-    
-    .bmi-img{
-        background: image-url('bmi4.png') no-repeat;
-        background-size: 100%
-    }
-    
     .border-right-lg {
         border-right: 1px solid rgba(0, 0, 0, 0.125);
     }
@@ -206,11 +174,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-.bg-white{
-    background-color: white;
-}
-
-.fa-bg-circle {
+.fa.fa-bg-circle {
     background: #78B92E;
     color: white !important;
     width:50px;
@@ -220,8 +184,44 @@ body {
     line-height: 50px;
 }
 
+.fa.fa-big{
+    font-size: 10em;
+}
+
 .znany-lekarz{
     max-width: 400px;
 }
 
 .no-underline{text-decoration: none !important}
+
+#height{
+    margin-left: 45px;
+}
+
+#height-append {
+    margin-left: -5px;
+}
+
+#weight {
+    margin-left: 55px;
+}
+
+.header-underline{
+    display: block;
+    width: 332px;
+    height: 2px;
+    background: $orange;
+    margin-bottom: 20px;
+    
+    @extend .mx-auto;
+    @extend .mx-lg-0;
+}
+
+#bmi {
+    .input-group { width: auto !important; }
+    .btn { width: 224px !important; }
+}
+
+@media only screen and (min-width: 977px) and (max-width: 1186px) {
+  #online-consulting #online-contact { font-size: 22px !important;}
+}
