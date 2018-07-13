@@ -12,12 +12,11 @@
       <%= canonical_tag %>
       <%= favicon_link_tag 'favicon.ico', :rel => 'icon', :type => "image/x-icon" %>
       
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-      <link href="https://fonts.googleapis.com/css?family=Nunito:300,400" rel="stylesheet"> 
-      <meta name="google-site-verification" content="eOvKHVHGzEgE1QNN7zh8jjlmv4a1qOKcgIQxz6wR7q0" />
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', async: true %>
       
+      <meta name="google-site-verification" content="eOvKHVHGzEgE1QNN7zh8jjlmv4a1qOKcgIQxz6wR7q0" />
+     
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119879198-1"></script>
       <script>
@@ -35,5 +34,32 @@
       <%= alerts %>
 
       <%= render "shared/footer" %>
+      
+       <script type="text/javascript">
+         WebFontConfig = {
+               google: { families: ['Nunito:300,400'] }
+            };
+         
+         (function(d) {
+            var wf = d.createElement('script'), s = d.scripts[0];
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+            wf.async = true;
+            s.parentNode.insertBefore(wf, s);
+         })(document);
+         
+         (function() {
+      		var css = document.createElement('link');
+      		css.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+      		css.rel = 'stylesheet';
+      		css.type = 'text/css';
+      		document.getElementsByTagName('head')[0].appendChild(css);
+   	   })();
+       
+         var username = "gab.rownowaga";
+         var hostname = "gmail.com";
+         var res = username + "@" + hostname;
+         document.getElementById("ide").innerHTML = res;
+         document.getElementById("ide2").innerHTML = res;
+      </script>
    </body>
 </html>
