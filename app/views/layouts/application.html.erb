@@ -12,7 +12,6 @@
       <%= canonical_tag %>
       <%= favicon_link_tag 'favicon.ico', :rel => 'icon', :type => "image/x-icon" %>
       
-      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', async: true %>
       
       <meta name="google-site-verification" content="eOvKHVHGzEgE1QNN7zh8jjlmv4a1qOKcgIQxz6wR7q0" />
@@ -54,12 +53,6 @@
       		css.type = 'text/css';
       		document.getElementsByTagName('head')[0].appendChild(css);
    	   })();
-       
-         var username = "gab.rownowaga";
-         var hostname = "gmail.com";
-         var res = username + "@" + hostname;
-         document.getElementById("ide").innerHTML = res;
-         document.getElementById("ide2").innerHTML = res;
       </script>
    </body>
 </html>
