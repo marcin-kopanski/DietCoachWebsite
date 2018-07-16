@@ -205,6 +205,9 @@ body {
     margin-left: 55px;
 }
 
+@media (max-width: 576px) {
+    .header-underline { width: 90% !important; }
+}
 .header-underline{
     display: block;
     width: 332px;
