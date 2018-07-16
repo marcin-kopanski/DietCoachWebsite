@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl-PL">
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,15 +11,29 @@
       <%= meta_tags %>
       <%= canonical_tag %>
       <%= favicon_link_tag 'favicon.ico', :rel => 'icon', :type => "image/x-icon" %>
+      
+      <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+      <link rel='dns-prefetch' href='//www.googletagmanager.com' />
+      <link rel='dns-prefetch' href='//s3.eu-central-1.amazonaws.com' />
 
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', async: true %>
       
       <meta name="google-site-verification" content="eOvKHVHGzEgE1QNN7zh8jjlmv4a1qOKcgIQxz6wR7q0" />
+      
+      <script type=application/ld+json>
+        {   "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "https://dietetyk-rownowaga.gda.pl/",
+            "name": "Gabinet terapii psychologicznej i psychodietetycznej Równowaga",
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "+48-883-657-833",
+                "contactType": "Customer service"
+            }], "sameAs": ["https://www.facebook.com/dietetykgdanskwrzeszcz/"] }
+      </script>
      
       <!-- Global site tag (gtag.js) - Google Analytics -->
-      <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-      <link rel='dns-prefetch' href='//www.googletagmanager.com' />
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119879198-1"></script>
       <script>
         window.dataLayer = window.dataLayer || [];
