@@ -30,7 +30,7 @@
 
 <div class="bg-white py-5">
   <div class="container py-5">
-    <h2 class="text-primary englebert-600 text-center text-lg-left">Dlaczego dietetyk ?</h2>
+    <h2 class="text-primary englebert-600 h1 text-center text-lg-left">Dlaczego dietetyk ?</h2>
     <div class="header-underline mx-lg-0"></div>
     <div class="row">
       <div class="col-12 col-lg-8 text-justify">
@@ -58,37 +58,37 @@
     <div class="card-deck recipes-deck">
       <div class="card mb-3 mb-md-0">
         <% if @featured_recipes[0] %>
+          <%= link_to  @featured_recipes[0] do %>
           <%= image_tag recipe_img(@featured_recipes[0].thumb_image, 'thumb') %>
           <div class="card-body text-center">
-            <p class="h4 card-title text-primary">
-              <%= link_to @featured_recipes[0].title, @featured_recipes[0] %>
-            </p>
-            <p class="text-justify"><%= @featured_recipes[0].subtitle %></p>
+            <span class="h4 card-title text-primary"><%= @featured_recipes[0].title %></span>
+            <p class="text-justify card-text"><%= @featured_recipes[0].subtitle %></p>
           </div>
+        <% end %>
         <% end %>
       </div>
 
       <div class="card mb-3 mb-md-0">
         <% if @featured_recipes[1] %>
+          <%= link_to  @featured_recipes[1] do %>
           <%= image_tag recipe_img(@featured_recipes[1].thumb_image, 'thumb') %>
           <div class="card-body text-center">
-            <p class="h4 card-title text-primary">
-              <%= link_to @featured_recipes[1].title, @featured_recipes[1] %>
-            </p>
-            <p class="text-justify"><%= @featured_recipes[1].subtitle %></p>
+            <span class="h4 card-title text-primary"><%= @featured_recipes[1].title %></span>
+            <p class="text-justify card-text"><%= @featured_recipes[1].subtitle %></p>
           </div>
+        <% end %>
         <% end %>
       </div>
 
       <div class="card mb-3 mb-md-0">
         <% if @featured_recipes[2] %>
+          <%= link_to  @featured_recipes[2] do %>
           <%= image_tag recipe_img(@featured_recipes[2].thumb_image, 'thumb') %>
           <div class="card-body text-center">
-            <p class="h4 card-title text-primary">
-              <%= link_to @featured_recipes[2].title, @featured_recipes[2] %>
-            </p>
-            <p class="text-justify"><%= @featured_recipes[2].subtitle %></p>
+            <span class="h4 card-title text-primary"><%= @featured_recipes[2].title %></span>
+            <p class="text-justify card-text"><%= @featured_recipes[2].subtitle %></p>
           </div>
+        <% end %>
         <% end %>
       </div>
     </div>
@@ -218,27 +218,48 @@
     <div class="header-underline mx-lg-0"></div>
     <div class="row pt-3">
       <div class="col-12 col-lg-4 pb-4">
+        <span class="text-primary float-right pr-3">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </span>
         <blockquote class="blockquote px-3 pl-lg-0 pr-lg-3">
           <i class="fa fa-quote-left fa-2"></i>
-          <p class="mb-0 text-justify">
+          <p class="mb-0 text-justify font-italic">
             Do Pani Patrycji zgłosiłam się z niedowagą. Potrzebowałam porządnie ułożonej diety, ponieważ jako pracująca i aktywna osoba nie mam czasu jeść bardzo regularnych posiłków. Pani Patrycja przeanalizowała skład mojego ciała, a po przeprowadzonym wywiadzie ułożyła świetną dietę z prostymi do zrobienia posiłkami. Po paru tygodniach faktycznie moja waga się powoli zmienia ;) 
           </p>
           <footer class="blockquote-footer text-right">Jagoda N.</footer>
         </blockquote>
       </div>
       <div class="col-12 col-lg-4 pb-4">
+        <span class="text-primary float-right pr-3">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </span>
         <blockquote class="blockquote px-3">
           <i class="fa fa-quote-left fa-2"></i>
-          <p class="mb-0 text-justify">
-            Serdecznie polecam. Profesjonalna konsultacja oraz dobrze i smacznie dobrane jadłospisy. Dietetyk godny zaufania:) 
+          <p class="mb-0 text-justify font-italic">
+            Serdecznie polecam. Profesjonalna konsultacja oraz dobrze i smacznie dobrane jadłospisy. Dietetyk godny zaufania :) 
           </p>
           <footer class="blockquote-footer text-right">Paulina S.</footer>
         </blockquote>
       </div>
       <div class="col-12 col-lg-4 pb-4">
+        <span class="text-primary float-right">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </span>
         <blockquote class="blockquote pl-3">
           <i class="fa fa-quote-left fa-2"></i>
-          <p class="mb-0 text-justify">
+          <p class="mb-0 text-justify font-italic">
             Skontaktowałam się z panią Patrycją, ponieważ jako wegetarianka z alergiami pokarmowymi miałam trudności z ułożeniem sobie diety. Bardzo profesjonalne podejście do tematu i szeroka wiedza to duże plusy pani Patrycji, a także to co dla mnie istotne dobranie takich produktów, które nie rujnują kieszeni. Polecam serdecznie! 
           </p>
           <footer class="blockquote-footer text-right">Anna J.</footer>

@@ -6,14 +6,11 @@
 
 $cdnURL: 'https://s3.eu-central-1.amazonaws.com/';
 
-@font-face {
-    font-family: "englebert";
-    src: font-url('englebert-regular.ttf') format("truetype");
-}
-
 .englebert-600{
-    font-family: "englebert";
+    font-family: 'Englebert', sans-serif;
     font-weight: 600;
+    letter-spacing: 2px;
+    &.nospace{ letter-spacing: 0px; }
 }
 
 .text-orange { color: $orange !important; }
@@ -81,7 +78,8 @@ body {
 .pricing-header,
 .offer-header,
 .recipes-header,
-.blog-header {
+.blog-header,
+.about-me-header{
    min-height: 200px;
  }
 
@@ -183,6 +181,17 @@ body {
     line-height: 50px;
 }
 
+.fa.fa-bg-circle-sm {
+    background: #343a40;
+    color: white !important;
+    width:31px;
+    height: 31px;
+    text-align: center;
+    display: inline;
+    border-radius: 50%;
+    line-height: 31px;
+}
+
 .fa.fa-big{
     font-size: 10em;
 }
@@ -223,6 +232,18 @@ body {
     .btn { width: 224px !important; }
 }
 
+#arrangeVisit { border: 1px solid #ffffff57; }
+
 @media only screen and (min-width: 977px) and (max-width: 1186px) {
   #online-consulting #online-contact { font-size: 22px !important;}
+}
+
+.recipes-deck .card { 
+    cursor: pointer;
+    transition: .5s ease;
+    &:hover{
+        opacity: 0.7;
+    }
+    a { text-decoration: none; }
+    .card-text { color: #212529; }
 }
