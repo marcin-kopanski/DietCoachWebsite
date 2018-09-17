@@ -55,13 +55,13 @@
   <div class="container py-5">
     <h2 class="text-primary h1 englebert-600 text-center text-lg-left">Przykładowe przepisy</h2>
     <div class="header-underline mx-lg-0"></div>
-    <div class="card-deck recipes-deck">
+    <div class="card-deck recipes-deck pt-3">
       <div class="card mb-3 mb-md-0">
         <% if @featured_recipes[0] %>
           <%= link_to  @featured_recipes[0] do %>
           <%= image_tag recipe_img(@featured_recipes[0].thumb_image, 'thumb') %>
           <div class="card-body text-center">
-            <span class="h4 card-title text-primary"><%= @featured_recipes[0].title %></span>
+            <p class="h4 card-title text-primary"><%= @featured_recipes[0].title %></p>
             <p class="text-justify card-text"><%= @featured_recipes[0].subtitle %></p>
           </div>
         <% end %>
@@ -73,7 +73,7 @@
           <%= link_to  @featured_recipes[1] do %>
           <%= image_tag recipe_img(@featured_recipes[1].thumb_image, 'thumb') %>
           <div class="card-body text-center">
-            <span class="h4 card-title text-primary"><%= @featured_recipes[1].title %></span>
+            <p class="h4 card-title text-primary"><%= @featured_recipes[1].title %></p>
             <p class="text-justify card-text"><%= @featured_recipes[1].subtitle %></p>
           </div>
         <% end %>
@@ -85,7 +85,7 @@
           <%= link_to  @featured_recipes[2] do %>
           <%= image_tag recipe_img(@featured_recipes[2].thumb_image, 'thumb') %>
           <div class="card-body text-center">
-            <span class="h4 card-title text-primary"><%= @featured_recipes[2].title %></span>
+            <p class="h4 card-title text-primary"><%= @featured_recipes[2].title %></p>
             <p class="text-justify card-text"><%= @featured_recipes[2].subtitle %></p>
           </div>
         <% end %>
