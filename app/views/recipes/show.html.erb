@@ -6,9 +6,13 @@
       <div class="row">
         <nav class="col-12 breadcrumb">
           <span class="pull-right">
-            <%= link_to fa_icon('pencil-square-o'), edit_recipe_path(@recipe) if logged_in?(:site_admin) %>
-            <%= link_to fa_icon('trash'), @recipe, method: :delete,
-            data: { confirm: "Czy chcesz usunąć ten przepis?" } if logged_in?(:site_admin) %>
+            <%= link_to edit_recipe_path(@recipe) if logged_in?(:site_admin) do %>
+              <i class="fa fa-pencil-square-o"></i>
+            <% end %>
+            <%= link_to @recipe, method: :delete,
+              data: { confirm: "Czy chcesz usunąć ten przepis?" } if logged_in?(:site_admin) do %>
+              <i class="fa fa-trash"></i>
+            <% end %>
           </span>
         </nav>
       </div>
