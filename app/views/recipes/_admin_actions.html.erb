@@ -3,7 +3,7 @@
       <%= link_to edit_recipe_path(recipe) do %>
          <i class="fa fa-pencil-square-o"></i>
       <% end %>
-      <%= recipe, method: :delete, data: { confirm: 'Are you sure?' } do %>
+      <%= link_to recipe, method: :delete, data: { confirm: 'Are you sure?' } do %>
          <i class="fa fa-trash"></i>
       <% end %>
    </nav>
