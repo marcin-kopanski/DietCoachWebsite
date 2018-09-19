@@ -6,7 +6,7 @@ class RecipesController < ApplicationController
 
   # GET /recipes
   def index
-    @recipes = Recipe.recent.page(params[:page]).per(5)
+    @recipes = Recipe.recent.page(params[:page]).per(6)
   end
 
   # GET /recipes/1
