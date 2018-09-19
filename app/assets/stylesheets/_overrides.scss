@@ -11,6 +11,10 @@
    border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
+.fa.fa-check, .card-title, .fa.fa-star{
+   color: $my-primary;
+}
+
 blockquote{
    font-size: 1.15rem !important;
    

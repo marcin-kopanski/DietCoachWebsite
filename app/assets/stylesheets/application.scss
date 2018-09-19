@@ -13,6 +13,10 @@ $cdnURL: 'https://s3.eu-central-1.amazonaws.com/';
     &.nospace{ letter-spacing: 0px; }
 }
 
+h2.englebert-600{
+    color: $my-primary;
+}
+
 .text-orange { color: $orange !important; }
 .text-logo-green { color: #39B186 !important; }
 .text-logo-blue { color: #088AC9 !important; }
