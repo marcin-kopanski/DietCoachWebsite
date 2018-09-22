@@ -55,13 +55,17 @@
       </style>
    </head>
    <body class="bg-light">
-      <%= render "shared/navbar" %>
+        <header>
+            <%= render "shared/navbar" %>
+        </header>
+        
+        <main>
+            <%= yield %>
+        </main>
 
-      <%= yield %>
-
-      <%= alerts %>
-
-      <%= render "shared/footer" %>
+        <%= alerts %>
+    
+        <%= render "shared/footer" %>
       
        <script>
          WebFontConfig = {

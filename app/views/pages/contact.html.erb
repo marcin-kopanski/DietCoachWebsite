@@ -28,7 +28,7 @@
                   var username = "gab.rownowaga";
       						var hostname = "gmail.com";
       						var res = username + "@" + hostname;
-                  $('#ide').text(res);
+      						document.getElementById("ide").innerHTML = res;
   						</script>
             </div>
           </div>
@@ -57,8 +57,6 @@
       <div class="col-12 col-md-8">
         <script type="text/javascript">
        		function initMap() {
-       		   console.log("Init map");
-       		   
        				map = new google.maps.Map(document.getElementById("map2"), {
        				zoom: 15,
        				center: new google.maps.LatLng(54.38008248278, 18.60375881195),
@@ -95,6 +93,7 @@
         </div>
         
       </div>
+  
     </div>
   </div>
 </div>
