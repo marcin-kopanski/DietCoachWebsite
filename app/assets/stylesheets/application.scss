@@ -3,6 +3,7 @@
 @import "blogs";
 @import "pages";
 @import "recipes";
+@import "pricing";
 
 $cdnURL: 'https://s3.eu-central-1.amazonaws.com/';
 
@@ -18,7 +19,6 @@ h2.englebert-600{
 }
 
 .text-orange { color: $orange !important; }
-.text-logo-green { color: #39B186 !important; }
 .text-logo-blue { color: #088AC9 !important; }
 .text-black { color: $black !important; }
 
@@ -78,7 +78,6 @@ body {
    background: url('#{$cdnURL}gabinet-rownowaga/static/header.jpg') no-repeat;
 }
 
-
 .offer-header{ min-height: 200px; }
 
 .contact-header,
@@ -125,34 +124,8 @@ body {
   width: 100%;
 }
 
-.pricing-card {
-  .price-card-header {
-    height: 70px;
-  }
-
-  .card-body {
-    ul {
-      padding-left: 20px;
-
-      li {
-        padding-bottom: .8rem;
-      }
-    }
-  }
-}
-
-.recipes-deck {
-  .card {
-    max-width: 348px;
-  }
-}
-
 .ml-100{
     margin-left: 100px;
-}
-
-#height, #weight {
-	max-width: 80px;
 }
 
 .shade-bottom {
@@ -168,16 +141,6 @@ body {
           width: 100%;
           max-height: 400px;
           max-width: 640px;}
-}
-
-@media (min-width: 768px) {
-    .google-map img{
-      box-shadow: 3px 3px 5px 0px #1d1d1d61;
-    }
-    
-    .border-right-lg {
-        border-right: 1px solid rgba(0, 0, 0, 0.125);
-    }
 }
 
 .map{
@@ -216,21 +179,24 @@ body {
 
 .no-underline{text-decoration: none !important}
 
-#height{
-    margin-left: 45px;
-}
-
-#height-append {
-    margin-left: -5px;
-}
-
-#weight {
-    margin-left: 55px;
-}
-
 @media (max-width: 576px) {
     .header-underline { width: 90% !important; }
 }
+
+@media only screen and (min-width: 977px) and (max-width: 1186px) {
+  #online-consulting #online-contact { font-size: 22px !important;}
+}
+
+@media (min-width: 768px) {
+    .google-map img{
+      box-shadow: 3px 3px 5px 0px #1d1d1d61;
+    }
+    
+    .border-right-lg {
+        border-right: 1px solid rgba(0, 0, 0, 0.125);
+    }
+}
+
 .header-underline{
     display: block;
     width: 332px;
@@ -245,24 +211,20 @@ body {
 #bmi {
     .input-group { width: auto !important; }
     .btn { width: 224px !important; }
+
+    #height{
+        margin-left: 45px;
+        max-width: 80px;}
+    
+    #height-append {
+        margin-left: -5px;}
+    
+    #weight {
+        margin-left: 55px;
+        max-width: 80px; }
 }
 
 #arrangeVisit { border: 1px solid #ffffff57; }
-
-@media only screen and (min-width: 977px) and (max-width: 1186px) {
-  #online-consulting #online-contact { font-size: 22px !important;}
-}
-
-.recipes-deck .card { 
-    cursor: pointer;
-    transition: .5s ease;
-    &:hover{
-        opacity: 0.7;
-    }
-    a { text-decoration: none; }
-    img { max-width: 100%; }
-    .card-text { color: #212529; }
-}
 
 #facebookBtn{
     position: fixed;
