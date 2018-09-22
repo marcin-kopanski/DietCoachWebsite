@@ -78,13 +78,23 @@ body {
    background: url('#{$cdnURL}gabinet-rownowaga/static/header.jpg') no-repeat;
 }
 
+
+.offer-header{ min-height: 200px; }
+
 .contact-header,
 .pricing-header,
-.offer-header,
 .recipes-header,
 .blog-header,
 .about-me-header{
    min-height: 200px;
+   h1{ 
+       font-size: 6rem;
+       line-height: 200px;
+       padding-left: calc(30% - 140px);
+       color: $my-text-dark;
+       font-family: "Allura";
+       text-shadow: 2px 2px #f8f9ff;
+   }
  }
 
 .contact-header,
@@ -252,4 +262,19 @@ body {
     a { text-decoration: none; }
     img { max-width: 100%; }
     .card-text { color: #212529; }
+}
+
+#facebookBtn{
+    position: fixed;
+    top: 40%;
+    right: 0;
+    cursor: pointer;
+    color: #088AC9;
+    background: white;
+    line-height: 18px;
+    border-radius: 10px;
+    .fa{
+            line-height: 52px;
+            border-radius: 5px;
+            width: 55px;}
 }

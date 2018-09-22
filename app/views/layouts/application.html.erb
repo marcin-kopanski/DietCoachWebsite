@@ -18,7 +18,6 @@
 
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', async: true %>
-      
       <meta name="google-site-verification" content="eOvKHVHGzEgE1QNN7zh8jjlmv4a1qOKcgIQxz6wR7q0" />
       
       <script type=application/ld+json>
@@ -62,6 +61,10 @@
         <main>
             <%= yield %>
         </main>
+        
+        <div id="facebookBtn">
+            <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
+        </div>
 
         <%= alerts %>
     
@@ -69,7 +72,7 @@
       
        <script>
          WebFontConfig = {
-               google: { families: ['Nunito:300,400','Englebert'] }
+               google: { families: ['Allura', 'Englebert', 'Nunito'] }
             };
          
          (function(d) {
