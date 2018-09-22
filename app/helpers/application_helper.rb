@@ -32,15 +32,15 @@ module ApplicationHelper
         title: "Główna"
       },
       {
-        url: about_me_path,
+        url: o_mnie_path,
         title: "O mnie"
       },
       {
-        url: pricing_path,
+        url: cennik_path,
         title: "Cennik"
       },
       {
-        url: offer_path,
+        url: oferta_path,
         title: "Oferta"
       },
       {
@@ -52,7 +52,7 @@ module ApplicationHelper
       #  title: "Blog"
       #},
       {
-        url: contact_path,
+        url: kontakt_path,
         title: "Kontakt"
       }
     ]

@@ -10,10 +10,10 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
 
-  get 'about-me', to: 'pages#about'
-  get 'pricing', to: 'pages#pricing'
-  get 'offer', to: 'pages#offer'
-  get 'contact', to: 'pages#contact'
+  get 'o-mnie', to: 'pages#o_mnie'
+  get 'cennik', to: 'pages#cennik'
+  get 'oferta', to: 'pages#oferta'
+  get 'kontakt', to: 'pages#kontakt'
 
   resources :blogs do
     member do
