@@ -72,25 +72,35 @@
         </script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaCjzAFc6QAQq9NN-UAuncO-W3ZPkdzYY&callback=initMap"></script>
         
+        
+        
 			  <div class="map" id="map2"></div>
 			  
       </div>
       <div class="col-12 col-md-4 pl-4">
         
         <div class="znany-lekarz pt-5 pt-lg-0">
-          <a id="zl-url" class="zl-url" href="https://www.znanylekarz.pl/patrycja-piekarczyk/psycholog-dietetyk/gdansk" rel="nofollow" data-zlw-doctor="patrycja-piekarczyk" data-zlw-type="big_visit" data-zlw-opinion="false" data-zlw-hide-branding="true">Patrycja Piekarczyk - ZnanyLekarz.pl</a><script>!function($_x,_s,id){var js,fjs=$_x.getElementsByTagName(_s)[0];if(!$_x.getElementById(id)){js = $_x.createElement(_s);js.id = id;js.src = "//www.docplanner-platform.com/js/widget.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","zl-widget-s");</script>
+          <a id="zl-url" class="zl-url" href="https://www.znanylekarz.pl/patrycja-piekarczyk/psycholog-dietetyk/gdansk" rel="nofollow" data-zlw-doctor="patrycja-piekarczyk" data-zlw-type="big_visit" data-zlw-opinion="false" data-zlw-hide-branding="true">Patrycja Piekarczyk - ZnanyLekarz.pl</a><script>!function($_x,_s,id){var js,fjs2=$_x.getElementsByTagName(_s);fjs=fjs2[0];for (var i = 0; i < fjs2.length; i++) {if (fjs2[i].id == id) {fjs2[i].parentNode.removeChild(fjs2[i]);break;}};if(!$_x.getElementById(id)){js = $_x.createElement(_s);js.id = id;js.src = "//www.docplanner-platform.com/js/widget.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","zl-widget-s");</script>
         </div>
-        <div style="padding-top: 33px">
-          <hr>
-          <div class="row">
-            <nav class="nav mx-auto">
-              <a href="https://www.facebook.com/dietetykgdanskwrzeszcz/" class="nav-link"><i class="fa fa-facebook fa-2x"></i></a>
-              <a href="https://pl.linkedin.com/in/patrycja-piekarczyk-ba7362147" class="nav-link"><i class="fa fa-linkedin fa-2x"></i></a>
-              <a href="#" class="nav-link"><i class="fa fa-twitter fa-2x"></i></a>
-            </nav>
-          </div>
-          <hr>
+        <div class="center-childreen">
+          <div class="fb-like" data-href="https://dietetyk-rownowaga.gda.pl" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
         </div>
+       <div id="fb-root" data-turbolinks-permanent ></div>
+        <script>
+          $(document).ready(function() {
+              var js, fjs=document.getElementsByTagName('script')[0];
+              if (document.getElementById('facebook-jssdk')) return;
+              js = document.createElement('script'); js.id = 'facebook-jssdk';
+              js.src = 'https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v3.1';
+              fjs.parentNode.insertBefore(js, fjs);
+          });
+          
+          document.addEventListener("turbolinks:load", function() {
+            if(window.FB) {
+              FB.XFBML.parse();
+            }
+          });
+        </script>
         
       </div>
   

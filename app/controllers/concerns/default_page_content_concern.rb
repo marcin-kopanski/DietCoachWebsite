@@ -7,7 +7,7 @@ module DefaultPageContentConcern
 
    def set_page_defaults
       @page_title = "Dietetyk Gdańsk Wrzeszcz - Gabinet Równowaga"
-      @page_description = "Potrzebujesz indywidualnej diety? Mieszkasz w Gdańsku? dietetyk-rownowaga.gda.pl jest tym czego szukasz! Zdrowe odżywianie potrafi być tanie!"
+      @page_description = "Potrzebujesz indywidualnej diety? Mieszkasz w Gdańsku? dietetyk-rownowaga.gda.pl jest tym czego szukasz! Zdrowe odżywianie jest tanie!"
       @seo_keywords = "dietetyk, dietetyk gdańsk, dietetyk gdańsk wrzeszcz, dieta, odchudzanie, równowaga, Patrycja Piekarczyk"
    end
 end

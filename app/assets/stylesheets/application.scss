@@ -78,8 +78,8 @@ body {
    background: url('#{$cdnURL}gabinet-rownowaga/static/header.jpg') no-repeat;
 }
 
-.offer-header{ min-height: 200px; }
 
+.offer-header,
 .contact-header,
 .pricing-header,
 .recipes-header,
@@ -122,6 +122,19 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
+  
+  nav {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    a {
+      color: white;
+      padding-top: 0px;
+      padding: 0 0.5rem;
+        i { font-size: 1.5em; }
+        
+    }
+  }
 }
 
 .ml-100{
@@ -227,6 +240,7 @@ body {
 #arrangeVisit { border: 1px solid #ffffff57; }
 
 #facebookBtn{
+    
     position: fixed;
     top: 40%;
     right: 0;
@@ -235,8 +249,15 @@ body {
     background: white;
     line-height: 18px;
     border-radius: 10px;
+    a{ color: #088AC9; transition: .7s; &:hover { color: #055d88; }}
     .fa{
             line-height: 52px;
             border-radius: 5px;
             width: 55px;}
+}
+
+.center-childreen{
+    margin: 0 auto;
+    text-align: center;
+    line-height: 70px;
 }
