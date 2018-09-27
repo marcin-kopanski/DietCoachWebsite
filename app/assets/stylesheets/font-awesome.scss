@@ -1,0 +1,120 @@
+$fontURL: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0';
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('#{$fontURL}/fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('#{$fontURL}/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+      url('#{$fontURL}/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+      url('#{$fontURL}/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+      url('#{$fontURL}/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+      url('#{$fontURL}/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* makes the font 33% larger relative to the icon container */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.fa-2x {
+  font-size: 2em;
+}
+.fa-3x {
+  font-size: 3em;
+}
+.fa-4x {
+  font-size: 4em;
+}
+.fa-5x {
+  font-size: 5em;
+}
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.fa-stack-1x,
+.fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.fa-stack-1x {
+  line-height: inherit;
+}
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+.fa-question:before {
+  content: "\f128";
+}
+.fa-envelope-o:before {
+  content: "\f003";
+}
+.fa-star:before {
+  content: "\f005";
+}
+.fa-check:before {
+  content: "\f00c";
+}
+.fa-map-marker:before {
+  content: "\f041";
+}
+.fa-edit:before {
+  content: "\f044";
+}
+.fa-pencil-square-o:before {
+  content: "\f044";
+}
+.fa-twitter:before {
+  content: "\f099";
+}
+.fa-facebook:before {
+  content: "\f09a";
+}
+.fa-facebook-f:before {
+  content: "\f09a";
+}
+.fa-linkedin:before {
+  content: "\f0e1";
+}
+.fa-quote-left:before {
+  content: "\f10d";
+}
+.fa-skype:before {
+  content: "\f17e";
+}
+.fa-trash:before {
+  content: "\f1f8";
+}
+.fa-facebook-official:before {
+  content: "\f230";
+}
+.fa-phone:before {
+  content: "\f095";
+}

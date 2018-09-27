@@ -4,6 +4,7 @@
 @import "pages";
 @import "recipes";
 @import "pricing";
+@import "font-awesome";
 
 $cdnURL: 'https://s3.eu-central-1.amazonaws.com/';
 
@@ -44,7 +45,7 @@ body {
       position: absolute;
       top: 10px;
     }
-    h2 { margin-bottom: -8px !important }
+    .h2 { margin-bottom: -8px !important }
   }
 }
 
