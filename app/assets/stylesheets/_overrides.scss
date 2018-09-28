@@ -42,5 +42,14 @@ blockquote{
    .fa-map-marker { margin-right: 12px; }
 }
 
+.btn-primary {
+    color: $white !important;
+    background-color: $my-primary;
+    padding: 0.375rem 0.75rem;
+    
+    &:hover{
+       background-color: $my-primary-dark
+    }
+}
 
 
