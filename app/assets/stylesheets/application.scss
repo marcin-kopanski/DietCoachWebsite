@@ -1,142 +1,14 @@
+$cdnURL: 'https://s3.eu-central-1.amazonaws.com/';
+
 @import "bootstrap/bootstrap";
+@import "main";
+@import "headers";
 @import "overrides";
 @import "blogs";
 @import "pages";
 @import "recipes";
 @import "pricing";
 @import "font-awesome";
-
-$cdnURL: 'https://s3.eu-central-1.amazonaws.com/';
-
-.englebert-600{
-    font-family: 'Englebert', sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
-    &.nospace{ letter-spacing: 0px; }
-}
-
-h2.englebert-600{
-    color: $my-primary;
-}
-
-.text-orange { color: $orange !important; }
-.text-logo-blue { color: #088AC9 !important; }
-.text-black { color: $black !important; }
-
-.bg-white { background-color: $white; }
-.bg-light-green { background: #f8fff0; }
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  font-family: 'Nunito', sans-serif;
-  margin-bottom: 40px;
-}
-
-.navbar {
-    -webkit-box-shadow: 0 8px 6px -6px #999;
-    -moz-box-shadow: 0 8px 6px -6px #999;
-    box-shadow: 0 8px 6px -6px #999;  
-  .navbar-brand {
-    .logo {
-      position: absolute;
-      top: 10px;
-    }
-    .h2 { margin-bottom: -8px !important }
-  }
-}
-
-.main-header {
-   background: url('#{$cdnURL}gabinet-rownowaga/static/header.jpg') no-repeat;
-   min-height: 500px;
-   h1{ font-size: 2rem; }
-}
-
-.about-me-header {
-   background: url('#{$cdnURL}gabinet-rownowaga/static/header.jpg') no-repeat;
-}
-
-.pricing-header {
-   background: url('#{$cdnURL}gabinet-rownowaga/static/header.jpg') no-repeat;
-}
-
-.offer-header {
-   background: url('#{$cdnURL}gabinet-rownowaga/static/header.jpg') no-repeat;
-}
-
-.recipes-header {
-   background: url('#{$cdnURL}gabinet-rownowaga/static/header.jpg') no-repeat;
-}
-
-.blog-header {
-   background: url('#{$cdnURL}gabinet-rownowaga/static/header.jpg') no-repeat;
-}
-
-.contact-header {
-   background: url('#{$cdnURL}gabinet-rownowaga/static/header.jpg') no-repeat;
-}
-
-
-.offer-header,
-.contact-header,
-.pricing-header,
-.recipes-header,
-.blog-header,
-.about-me-header{
-   min-height: 200px;
-   h1{ 
-       font-size: 6rem;
-       line-height: 200px;
-       padding-left: calc(30% - 140px);
-       color: $my-text-dark;
-       font-family: "Allura";
-       text-shadow: 2px 2px #f8f9ff;
-   }
- }
-
-.contact-header,
-.offer-header,
-.recipes-header,
-.blog-header,
-.pricing-header,
-.about-me-header,
-.main-header {
-    -webkit-box-shadow: 0 8px 6px -6px #999;
-    -moz-box-shadow: 0 8px 6px -6px #999;
-    box-shadow: 0 8px 6px -6px #999; 
-    background-position: right;
-    background-size: cover;
-
-   .jumbotron {
-      background-color: transparent;
-
-      .panel {
-         background-color: #27272766;
-      }
-   }
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  
-  nav {
-    position: absolute;
-    top: 8px;
-    right: 5px;
-    a {
-      color: white;
-      padding-top: 0px;
-      padding: 0 0.5rem;
-        i { font-size: 1.5em; }
-        
-    }
-  }
-}
 
 .ml-100{
     margin-left: 100px;
