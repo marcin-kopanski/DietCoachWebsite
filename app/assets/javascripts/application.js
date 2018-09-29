@@ -13,8 +13,6 @@
 //= require jquery3
 //= require bootstrap/util
 //= require bootstrap/collapse
-//= require cocoon
-//= require gritter
 //= require cable
 //= require rails-ujs
 //= require turbolinks
