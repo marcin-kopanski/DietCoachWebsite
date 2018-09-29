@@ -83,22 +83,13 @@ $theme-colors: () !default;
 $theme-colors: ( primary: $my-primary,
 primary-dark: $my-primary-dark,
 primary-light: $my-primary-light,
-accent: $my-accent,
 secondary: $my-secondary-text,
-success: $green,
-info: $my-accent,
-warning: $yellow,
-danger: $red,
 light: $gray-100,
 dark: $my-text-dark,
 panel-border: $card-border-color);
 $theme-colors: map-merge((
   "primary":    $primary,
   "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
   "light":      $light,
   "dark":       $dark
 ), $theme-colors);
@@ -118,14 +109,14 @@ $yiq-text-light: $white !default;
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
-$enable-caret:              true !default;
+$enable-caret:              false !default;
 $enable-rounded:            true !default;
 $enable-shadows:            false !default;
 $enable-gradients:          false !default;
-$enable-transitions:        true !default;
+$enable-transitions:        false !default;
 $enable-hover-media-query:  false !default; // Deprecated, no longer affects any compiled CSS
 $enable-grid-classes:       true !default;
-$enable-print-styles:       true !default;
+$enable-print-styles:       false !default;
 
 
 // Spacing
