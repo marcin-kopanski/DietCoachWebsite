@@ -1,0 +1,10 @@
+@include media-breakpoint-down(md) {
+    #about-img {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        img{
+            max-width: 260px;
+        }
+    }
+}

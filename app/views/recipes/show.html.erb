@@ -23,11 +23,11 @@
     </div>
 
     <div class="row">
-      <div class="col-8 text-center mb-4">
+      <div class="col-12 col-md-8 text-center mb-4">
         <%= image_tag recipe_img(@recipe.main_image, 'main'), width: '100%' %>
       </div>
 
-      <div class="col-4">
+      <div class="col-12 col-md-4">
         <h4 class="text-primary"><strong>Składniki:</strong></h4>
         <%= markdown @recipe.ingredients %>
       </div>

@@ -23,6 +23,13 @@
         background: url('#{$cdnURL}gabinet-rownowaga/static/dietetyk_gdansk_header_xl.jpg') no-repeat;}
 }
 
+
+@include media-breakpoint-down(sm) {
+    .common-header{ 
+        h1{ font-size: 4rem !important; }
+    }
+}
+
 .common-header{
    min-height: 200px;
    h1{ 
