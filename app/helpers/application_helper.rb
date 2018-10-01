@@ -95,7 +95,6 @@ module ApplicationHelper
 
   def alerts
     alert = (flash[:alert] || flash[:error] || flash[:notice])
-
   end
 
   class CodeRayify < Redcarpet::Render::HTML

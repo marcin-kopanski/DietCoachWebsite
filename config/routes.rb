@@ -14,14 +14,8 @@ Rails.application.routes.draw do
   get 'cennik', to: 'pages#cennik'
   get 'oferta', to: 'pages#oferta'
   get 'kontakt', to: 'pages#kontakt'
-
-  resources :blogs do
-    member do
-      get :toggle_status
-    end
-  end
   
-  resources :recipes
+  resources :recipes, :path => 'przepisy'
 
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
 
