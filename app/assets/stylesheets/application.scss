@@ -82,6 +82,15 @@ $cdnURL: 'https://s3.eu-central-1.amazonaws.com/';
     .border-right-lg {
         border-right: 1px solid rgba(0, 0, 0, 0.125);
     }
+    
+    .recipe {
+        transition: all .3s;
+    }
+    .recipe:hover {
+        background-color: #FFF;
+        cursor: pointer;
+        transform: scale(1.02);
+    }
 }
 
 .header-underline{

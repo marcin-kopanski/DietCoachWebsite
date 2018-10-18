@@ -1,15 +1,6 @@
 .recipe {
-    transition: all .3s;
-}
-
-.recipe a{
     text-decoration: none;
-}
-
-.recipe:hover {
-    background-color: #FFF;
-    cursor: pointer;
-    transform: scale(1.02);
+    &.row { margin-left: 0 !important; margin-right: 0 !important }
 }
 
 .recipes-deck .card { 
