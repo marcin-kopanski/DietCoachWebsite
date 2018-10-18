@@ -14,20 +14,20 @@
     <% @recipes.each.with_index(1) do |recipe, index| %>
       <%= link_to recipe, class: "row no-underline" do %>
       <div class="row w-100 recipe px-3 py-4">
-        <div class="col-md-4 <%= 'order-1 order-md-12' if index.even? %>">
-          <%= image_tag recipe_img(recipe.thumb_image, 'thumb'), width: '100%' %>
+        <div class="col-md-4 p-0 <%= 'order-1 order-md-12' if index.even? %>">
+          <%= image_tag recipe_img(recipe.thumb_image, 'thumb'), width: '350' %>
         </div>
         <div class="col-md-8 order-2 pt-4">
           <div class="row">
             <div class="col">
-              <h2 class="englebert-600 text-center"> <%= markdown recipe.title %></h2>
+              <h2 class="englebert-600 text-center"> <%= recipe.title %></h2>
             </div>
 
             <% if logged_in?(:site_admin) %>
               <div class="col-2 text-center"><%= render partial: 'recipes/admin_actions', locals: { recipe: recipe } %></div>
             <% end %>
           </div>
-          <span class="text-black text-justify"><%= markdown recipe.subtitle %></span>
+          <div class="text-black text-justify"><%= markdown recipe.subtitle %></div>
         </div>
       </div>
       <% end %>
