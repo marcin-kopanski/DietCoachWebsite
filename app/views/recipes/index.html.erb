@@ -13,11 +13,11 @@
 
     <% @recipes.each.with_index(1) do |recipe, index| %>
       <%= link_to recipe, class: "no-underline" do %>
-      <div class="row w-100 recipe px-3 py-4 mb-3 mb-md-0">
+      <div class="row w-100 recipe px-md-3 py-4 mb-3 mb-md-0">
         <div class="col-12 col-md-4 p-0 d-flex justify-content-center <%= 'order-1 order-md-12' if index.even? %>">
           <%= image_tag recipe_img(recipe.thumb_image, 'thumb'), width: '350' %>
         </div>
-        <div class="col-12 col-md-8 order-2 pt-4">
+        <div class="col-12 col-md-8 order-2 pt-4 px-0 px-md-3">
           <div class="row">
             <div class="col">
               <h2 class="englebert-600 text-center mb-3"> <%= recipe.title %></h2>
