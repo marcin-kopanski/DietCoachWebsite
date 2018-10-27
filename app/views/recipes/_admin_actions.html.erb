@@ -1,10 +1,10 @@
 <% if logged_in?(:site_admin) %>
    <nav class="breadcrumb blogcrumb">
       <%= link_to edit_recipe_path(recipe) do %>
-         <i class="fa fa-pencil-square-o"></i>
+         <i class="fa icon-pencil"></i>
       <% end %>
       <%= link_to recipe, method: :delete, data: { confirm: 'Are you sure?' } do %>
-         <i class="fa fa-trash"></i>
+         <i class="fa icon-trash"></i>
       <% end %>
    </nav>
 <% end %>

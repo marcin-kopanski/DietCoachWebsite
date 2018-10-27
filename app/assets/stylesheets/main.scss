@@ -5,6 +5,12 @@
     &.nospace{ letter-spacing: 0px; }
 }
 
+.englebert-sm{
+  font-family: "englebert";
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
 h2.englebert-600{
     color: $my-primary;
 }
@@ -55,5 +61,54 @@ body {
         i { font-size: 1.5em; }
         
     }
+  }
+}
+
+.list-group {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  // No need to set list-style: none; since .list-group-item is block level
+  padding-left: 0; // reset padding because ul and ol
+  margin-bottom: 0;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: $list-group-item-padding-y $list-group-item-padding-x;
+  // Place the border on the list items and negative margin up for better styling
+  margin-bottom: -$list-group-border-width;
+  background-color: $list-group-bg;
+  border: $list-group-border-width solid $list-group-border-color;
+  
+  p { margin-bottom: 0px; }
+
+  &:first-child {
+    @include border-top-radius($list-group-border-radius);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+    @include border-bottom-radius($list-group-border-radius);
+  }
+
+  @include hover-focus {
+    z-index: 1; // Place hover/active items above their siblings for proper border styling
+    text-decoration: none;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $list-group-disabled-color;
+    background-color: $list-group-disabled-bg;
+  }
+
+  // Include both here for `<a>`s and `<button>`s
+  &.active {
+    z-index: 2; // Place active items above their siblings for proper border styling
+    color: $list-group-active-color;
+    background-color: $list-group-active-bg;
+    border-color: $list-group-active-border-color;
   }
 }

@@ -8,18 +8,18 @@
         <nav class="col-12 breadcrumb">
           <span class="pull-right">
             <%= link_to edit_recipe_path(@recipe) if logged_in?(:site_admin) do %>
-              <i class="fa fa-pencil-square-o"></i>
+              <i class="fa icon-pencil"></i>
             <% end %>
             <%= link_to @recipe, method: :delete,
               data: { confirm: "Czy chcesz usunąć ten przepis?" } if logged_in?(:site_admin) do %>
-              <i class="fa fa-trash"></i>
+              <i class="fa icon-trash"></i>
             <% end %>
           </span>
         </nav>
       </div>
     <% end %>
 
-    <div class="row my-3">
+    <div class="row my-3 mx-0">
       <h2 class="mx-auto text-primary"><strong><%= markdown @recipe.title %></strong></h2>
     </div>
 

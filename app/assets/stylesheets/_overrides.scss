@@ -11,14 +11,23 @@
    border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-.fa.fa-check, .card-title, .fa.fa-star{
+.fa.icon-check, .card-title, .fa.icon-star {
    color: $my-primary;
 }
+
+.icon-frown { color: $orange }
+
+#contact-panel {
+   .fa { 
+      &:before { margin-right: 1px;}
+   }
+}
+
 
 blockquote{
    font-size: 1.15rem !important;
    
-   .fa-quote-left{
+   .icon-quote-left{
       margin-left: -15px;} 
    
    .blockquote-footer{
@@ -27,8 +36,8 @@ blockquote{
 }
 
 #online-consulting {
-   .fa-skype { padding-right: 10px;}
-   .fa-envelope-o { padding-right: 8px;}
+   .icon-skype { padding-right: 10px;}
+   .icon-mail { padding-right: 8px;}
 }
 
 #contact-info {
@@ -37,9 +46,9 @@ blockquote{
    
    .fa { background-color: $my-primary !important; }
    
-   .fa-envelope-o { margin-right: 8px; }
-   .fa-phone { margin-right: 10px; }
-   .fa-map-marker { margin-right: 12px; }
+   .icon-mail { margin-right: 8px; }
+   .icon-phone { margin-right: 10px; }
+   .icon-location { margin-right: 12px; }
 }
 
 .btn-primary {

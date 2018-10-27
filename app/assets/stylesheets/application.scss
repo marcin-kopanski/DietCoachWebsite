@@ -8,8 +8,9 @@ $cdnURL: 'https://s3.eu-central-1.amazonaws.com/';
 @import "pages";
 @import "recipes";
 @import "pricing";
-@import "font-awesome";
+//@import "font-awesome";
 @import "about";
+@import "fontello";
 
 .ml-100{
     margin-left: 100px;
@@ -132,11 +133,17 @@ $cdnURL: 'https://s3.eu-central-1.amazonaws.com/';
     background: white;
     line-height: 18px;
     border-radius: 10px;
-    a{ color: #088AC9; transition: .7s; &:hover { color: #055d88; }}
+    a { 
+        color: #088AC9; transition: .7s; &:hover { color: #055d88; }
+    }
+    
     .fa{
-            line-height: 52px;
-            border-radius: 5px;
-            width: 55px;}
+        &:before {
+            line-height: 54px;
+            display: initial;
+            margin-right: 0;
+            margin-left: 0;
+        }}
 }
 
 .center-childreen{
