@@ -4,19 +4,19 @@
 }
 
 @include media-breakpoint-only(xs) {
-    .main-header, .common-header{ background: url('dietetyk_gdansk_header_xs.jpg') no-repeat; }
+    .main-header, .common-header{ background: image-url('dietetyk_gdansk_header_xs.jpg') no-repeat; }
 }
 @include media-breakpoint-only(sm) {
-    .main-header, .common-header{ background: url('dietetyk_gdansk_header_sm.jpg') no-repeat; }
+    .main-header, .common-header{ background: image-url('dietetyk_gdansk_header_sm.jpg') no-repeat; }
 }
 @include media-breakpoint-only(md) {
-    .main-header, .common-header{ background: url('dietetyk_gdansk_header_md.jpg') no-repeat; }
+    .main-header, .common-header{ background: image-url('dietetyk_gdansk_header_md.jpg') no-repeat; }
 }
 @include media-breakpoint-only(lg) {
-    .main-header, .common-header{ background: url('dietetyk_gdansk_header_lg.jpg') no-repeat; }
+    .main-header, .common-header{ background: image-url('dietetyk_gdansk_header_lg.jpg') no-repeat; }
 }
 @include media-breakpoint-up(xl) {
-    .main-header, .common-header{ background: url('dietetyk_gdansk_header_xl.jpg') no-repeat;}
+    .main-header, .common-header{ background: image-url('dietetyk_gdansk_header_xl.jpg') no-repeat;}
 }
 
 
