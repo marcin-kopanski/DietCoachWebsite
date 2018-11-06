@@ -6,13 +6,25 @@
       <meta name="description" content="<%= @page_description  %>" />
       <title><%= yield(:title) %></title>
       
+      <meta property="og:locale" content="pl_PL" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Dietetyk Gdańsk Wrzeszcz - Gabinet Równowaga" />
+      <meta property="og:description" content="Potrzebujesz indywidualnej diety? Mieszkasz w Gdańsku? dietetyk-rownowaga.gda.pl jest tym czego szukasz!" />
+      <meta property="og:url" content="https://dietetyk-rownowaga.gda.pl" />
+      <meta property="og:site_name" content="Dietetyk Gdańsk Wrzeszcz - Gabinet Równowaga" />
+      <meta property="og:image" content='<%= image_url "rownowaga_share_img.jpg" %>' />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      
       <%= csrf_meta_tags %>
       <%= meta_tags %>
       <%= canonical_tag %>
       <%= favicon_link_tag 'favicon.ico', :rel => 'icon', :type => "image/x-icon" %>
       
-      <link rel='dns-prefetch' href='//www.googletagmanager.com' />
-      <link rel='dns-prefetch' href='//s3.eu-central-1.amazonaws.com' />
+      <link rel='dns-prefetch' href='https://www.googletagmanager.com' />
+      <link rel='dns-prefetch' href='https://www.google-analytics.com' />
+      <link rel='dns-prefetch' href='https://gabinet-rownowaga.s3.amazonaws.com' />
+      <link rel='dns-prefetch' href='https://fonts.gstatic.com' />
 
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', async: true %>
