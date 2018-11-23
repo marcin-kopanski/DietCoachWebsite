@@ -9,9 +9,10 @@ CarrierWave.configure do |config|
   # Set custom options such as cache control to leverage browser caching
   config.aws_attributes = {
     expires: 1.month.from_now.httpdate,
-    cache_control: 'max-age=2592000'
+    cache_control: 'max-age=31536000'
   }
-
+  #One month 2592000
+  
   config.aws_credentials = {
     access_key_id:     ENV.fetch('AWS_ACCESS_KEY_ID'),
     secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
