@@ -8,8 +8,8 @@ CarrierWave.configure do |config|
 
   # Set custom options such as cache control to leverage browser caching
   config.aws_attributes = {
-    expires: 1.week.from_now.httpdate,
-    cache_control: 'max-age=604800'
+    expires: 1.month.from_now.httpdate,
+    cache_control: 'max-age=2592000'
   }
 
   config.aws_credentials = {
