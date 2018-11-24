@@ -85,7 +85,7 @@
       <div class="card mb-3 mb-md-0">
         <% if @featured_recipes[0] %>
           <%= link_to  @featured_recipes[0] do %>
-          <img class="w-100" data-src='<%= recipe_img(@featured_recipes[0].thumb_image, 'thumb') %>' alt="Owsianka min" />
+          <img class="w-100" data-src='<%= recipe_img(@featured_recipes[0].thumb_image, 'thumb') %>' alt="Owsianka" />
           <div class="card-body text-center">
             <p class="h4 card-title"><%= @featured_recipes[0].title %></p>
             <p class="text-justify card-text"><%= @featured_recipes[0].subtitle %></p>
@@ -97,7 +97,7 @@
       <div class="card mb-3 mb-md-0">
         <% if @featured_recipes[1] %>
           <%= link_to  @featured_recipes[1] do %>
-          <%= image_tag recipe_img(@featured_recipes[1].thumb_image, 'thumb') %>
+          <img class="w-100" data-src='<%= recipe_img(@featured_recipes[1].thumb_image, 'thumb') %>' alt="Pieczone pierogi" />
           <div class="card-body text-center">
             <p class="h4 card-title"><%= @featured_recipes[1].title %></p>
             <p class="text-justify card-text"><%= @featured_recipes[1].subtitle %></p>
@@ -109,7 +109,7 @@
       <div class="card mb-3 mb-md-0">
         <% if @featured_recipes[2] %>
           <%= link_to  @featured_recipes[2] do %>
-          <%= image_tag recipe_img(@featured_recipes[2].thumb_image, 'thumb') %>
+          <img class="w-100" data-src='<%= recipe_img(@featured_recipes[2].thumb_image, 'thumb') %>' alt="Zupa dyniowa" />
           <div class="card-body text-center">
             <p class="h4 card-title"><%= @featured_recipes[2].title %></p>
             <p class="text-justify card-text"><%= @featured_recipes[2].subtitle %></p>
