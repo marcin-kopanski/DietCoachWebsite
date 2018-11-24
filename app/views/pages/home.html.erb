@@ -85,7 +85,7 @@
       <div class="card mb-3 mb-md-0">
         <% if @featured_recipes[0] %>
           <%= link_to  @featured_recipes[0] do %>
-          <%= image_tag recipe_img(@featured_recipes[0].thumb_image, 'thumb') %>
+          <img class="w-100" data-src='<%= recipe_img(@featured_recipes[0].thumb_image, 'thumb') %>' alt="Owsianka min" />
           <div class="card-body text-center">
             <p class="h4 card-title"><%= @featured_recipes[0].title %></p>
             <p class="text-justify card-text"><%= @featured_recipes[0].subtitle %></p>

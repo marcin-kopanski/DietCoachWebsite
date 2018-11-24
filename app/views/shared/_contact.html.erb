@@ -9,7 +9,6 @@
       <div id="contact-info" class="col-12 col-lg-4 py-5 pl-md-5">
           <div class="pl-2 text-dark">Psycholog | Dietetyk</div>
           <h3 class="pl-2 mb-0"><b>Patrycja Piekarczyk</b></h3>
-          
         <hr>
         <div class="">
           <div class="row mx-auto">
@@ -39,3 +38,6 @@
    document.getElementById("ide2").innerHTML = res;
 </script>
 
+<script>
+  var images=document.querySelectorAll('[data-src]'),config={rootMargin:'0px 0px 50px 0px',threshold:0},observer=new IntersectionObserver(function(a,b){a.forEach(function(c){c.isIntersecting&&(preloadImage(c.target),b.unobserve(c.target))})},config);images.forEach(function(a){observer.observe(a)});function preloadImage(a){var b=a.getAttribute('data-src');b&&(a.src=b)}
+</script>

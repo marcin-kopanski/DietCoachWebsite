@@ -28,7 +28,6 @@ Rails.application.configure do
   
   config.assets.js_compressor = :uglifier
   
-
   # Don't care if the mailer can't send.
   # mk change to true
   config.action_mailer.raise_delivery_errors = true
