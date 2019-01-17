@@ -2,7 +2,7 @@
   <div class="container py-3">
     <div class="row">
       <div class="col-12 col-lg-8">
-	      <a target="_blank" class="google-map w-100" href="https://www.google.com/maps/place/Antoniego+Słonimskiego+6,+Gda%C5%84sk/@54.3835917,18.5902216,18z/data=!3m1!4b1!4m5!3m4!1s0x46fd7494237fde27:0xa9471cdddbda897!8m2!3d54.3835917,18.5902216" >
+	      <a target="_blank" class="google-map w-100" href="https://www.google.com/maps/place/Gabinet+%22R%C3%B3wnowaga%22+Dietetyk+Psycholog/@54.3835917,18.5891273,18z/data=!3m1!4b1!4m5!3m4!1s0x46fd0bacac98e107:0xa8ad75c649cb59d7!8m2!3d54.3835917!4d18.5902216" >
 			    <%= image_tag "dietetyk_gdansk_google_maps.jpg", class: "img-map" %>
         </a>
       </div>
@@ -39,5 +39,12 @@
 </script>
 
 <script>
+  var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  if(isSafari){
+    var dynamicScript = document.createElement('script'), scripts = document.scripts[0];
+    dynamicScript.src = 'https://unpkg.com/intersection-observer';
+    dynamicScript.async = true;
+    scripts.parentNode.insertBefore(dynamicScript, scripts);
+  }
   var images=document.querySelectorAll('[data-src]'),config={rootMargin:'0px 0px 50px 0px',threshold:0},observer=new IntersectionObserver(function(a,b){a.forEach(function(c){c.isIntersecting&&(preloadImage(c.target),b.unobserve(c.target))})},config);images.forEach(function(a){observer.observe(a)});function preloadImage(a){var b=a.getAttribute('data-src');b&&(a.src=b)}
 </script>
