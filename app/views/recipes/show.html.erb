@@ -1,5 +1,4 @@
-<% content_for :title, "Przepisy dietetyczne - Gabinet Równowaga" %>
-<%= render "shared/recipes_header" %>
+<% content_for :title, @recipe.title + " - Gabinet Równowaga" %>
 
 <div class="bg-light py-3">
   <div class="container">
@@ -20,7 +19,7 @@
     <% end %>
 
     <div class="row my-3 mx-0">
-      <h2 class="mx-auto text-primary"><strong><%= markdown @recipe.title %></strong></h2>
+      <h1 class="mx-auto text-primary"><strong><%= markdown @recipe.title %></strong></h1>
     </div>
 
     <div class="row">
