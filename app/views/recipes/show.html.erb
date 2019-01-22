@@ -1,5 +1,5 @@
-<% content_for :title, @recipe.title + " - Gabinet Równowaga" %>
-
+<% content_for :title, @recipe.title + " | Gabinet Równowaga" %>
+<% content_for :description, @recipe.subtitle %>
 <div class="bg-light py-3">
   <div class="container">
     <% if logged_in?(:site_admin) %>
@@ -21,14 +21,18 @@
     <div class="row my-3 mx-0">
       <h1 class="mx-auto text-primary"><strong><%= markdown @recipe.title %></strong></h1>
     </div>
-
+    
+    <div class="row my-3 mx-0">
+      <%= markdown @recipe.subtitle %>
+    </div>
+    
     <div class="row">
       <div class="col-12 col-md-8 text-center mb-4">
         <%= image_tag recipe_img(@recipe.main_image, 'main'), width: '100%' %>
       </div>
 
       <div class="col-12 col-md-4">
-        <h4 class="text-primary"><strong>Składniki:</strong></h4>
+        <h4 class="text-primary pl-3"><strong>Składniki:</strong></h4>
         <%= markdown @recipe.ingredients %>
       </div>
     </div>
@@ -36,7 +40,7 @@
     <div class="row">
       <div class="col-12">
         <h4 class="text-primary"><strong>Opis przygotowania:</strong></h4>
-        <p><%= markdown @recipe.body %></p>
+        <%= markdown @recipe.body %>
       </div>
     </div>
   </div>
