@@ -9,19 +9,19 @@
 <url>
   <loc>https://dietetyk-rownowaga.gda.pl/</loc>
   <lastmod>2018-09-28T12:13:49+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://dietetyk-rownowaga.gda.pl/o-mnie</loc>
   <lastmod>2018-09-28T12:13:49+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
   <priority>0.50</priority>
 </url>
 <url>
   <loc>https://dietetyk-rownowaga.gda.pl/cennik</loc>
   <lastmod>2018-09-28T12:13:49+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
@@ -33,13 +33,13 @@
 <url>
   <loc>https://dietetyk-rownowaga.gda.pl/oferta</loc>
   <lastmod>2018-09-28T12:13:49+00:00</lastmod>'
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dietetyk-rownowaga.gda.pl/kontakt</loc>
   <lastmod>2018-09-28T12:13:49+00:00</lastmod>'
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 </urlset>
